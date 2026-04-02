@@ -98,6 +98,7 @@ Partial Class Material
         TableLayoutPanel12 = New TableLayoutPanel()
         lbCantidadUMedidaFechaR = New Label()
         lbTipoMarca = New Label()
+        Panel3 = New Panel()
         TableLayoutPanel13 = New TableLayoutPanel()
         lbPrecioVentaUMedida = New Label()
         lbsubPrecioVenta = New Label()
@@ -106,6 +107,9 @@ Partial Class Material
         lbProveedorPrincipal = New Label()
         lbsubProveedor = New Label()
         TableLayoutPanel14 = New TableLayoutPanel()
+        Panel6 = New Panel()
+        Panel4 = New Panel()
+        Panel5 = New Panel()
         lbDesripcionUltimoUso = New Label()
         Panelr14 = New PanelR()
         btnAsignar = New Button()
@@ -157,6 +161,7 @@ Partial Class Material
         TableLayoutPanel12.SuspendLayout()
         TableLayoutPanel13.SuspendLayout()
         TableLayoutPanel14.SuspendLayout()
+        Panel4.SuspendLayout()
         Panelr14.SuspendLayout()
         Panelr16.SuspendLayout()
         SuspendLayout()
@@ -165,20 +170,21 @@ Partial Class Material
         ' 
         TableLayoutPanel1.BackColor = Color.WhiteSmoke
         TableLayoutPanel1.ColumnCount = 2
-        TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 75F))
-        TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 25F))
+        TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 75.0F))
+        TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 25.0F))
         TableLayoutPanel1.Controls.Add(panelPrincipal, 0, 2)
         TableLayoutPanel1.Controls.Add(Panelr3, 0, 1)
         TableLayoutPanel1.Controls.Add(Panelr1, 0, 0)
         TableLayoutPanel1.Controls.Add(PanelDerecho, 1, 0)
         TableLayoutPanel1.Dock = DockStyle.Fill
         TableLayoutPanel1.Location = New Point(0, 0)
+        TableLayoutPanel1.Margin = New Padding(3, 4, 3, 4)
         TableLayoutPanel1.Name = "TableLayoutPanel1"
         TableLayoutPanel1.RowCount = 3
-        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 15F))
-        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 20F))
-        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 65F))
-        TableLayoutPanel1.Size = New Size(1720, 1080)
+        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 15.0F))
+        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 20.0F))
+        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 65.0F))
+        TableLayoutPanel1.Size = New Size(1966, 1440)
         TableLayoutPanel1.TabIndex = 1
         ' 
         ' panelPrincipal
@@ -186,10 +192,10 @@ Partial Class Material
         panelPrincipal.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         panelPrincipal.BackColor = SystemColors.ButtonFace
         panelPrincipal.Controls.Add(Panelr6)
-        panelPrincipal.Location = New Point(50, 393)
-        panelPrincipal.Margin = New Padding(50, 15, 20, 20)
+        panelPrincipal.Location = New Point(57, 524)
+        panelPrincipal.Margin = New Padding(57, 20, 23, 27)
         panelPrincipal.Name = "panelPrincipal"
-        panelPrincipal.Size = New Size(1220, 667)
+        panelPrincipal.Size = New Size(1394, 889)
         panelPrincipal.TabIndex = 2
         ' 
         ' Panelr6
@@ -197,28 +203,30 @@ Partial Class Material
         Panelr6.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         Panelr6.BackColor = Color.White
         Panelr6.Controls.Add(TableLayoutPanel9)
-        Panelr6.Location = New Point(2, 2)
+        Panelr6.Location = New Point(2, 3)
+        Panelr6.Margin = New Padding(3, 4, 3, 4)
         Panelr6.Name = "Panelr6"
-        Panelr6.Size = New Size(1214, 661)
+        Panelr6.Size = New Size(1387, 881)
         Panelr6.TabIndex = 0
         ' 
         ' TableLayoutPanel9
         ' 
         TableLayoutPanel9.ColumnCount = 5
-        TableLayoutPanel9.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 39F))
+        TableLayoutPanel9.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 39.0F))
         TableLayoutPanel9.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 31.5236435F))
         TableLayoutPanel9.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 13.9229422F))
         TableLayoutPanel9.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 12.4343262F))
-        TableLayoutPanel9.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 3F))
+        TableLayoutPanel9.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 3.0F))
         TableLayoutPanel9.Controls.Add(dgvCliente, 0, 0)
         TableLayoutPanel9.Controls.Add(Panelr20, 3, 1)
         TableLayoutPanel9.Dock = DockStyle.Fill
         TableLayoutPanel9.Location = New Point(0, 0)
+        TableLayoutPanel9.Margin = New Padding(3, 4, 3, 4)
         TableLayoutPanel9.Name = "TableLayoutPanel9"
         TableLayoutPanel9.RowCount = 2
         TableLayoutPanel9.RowStyles.Add(New RowStyle(SizeType.Percent, 93.07293F))
         TableLayoutPanel9.RowStyles.Add(New RowStyle(SizeType.Percent, 6.927072F))
-        TableLayoutPanel9.Size = New Size(1214, 661)
+        TableLayoutPanel9.Size = New Size(1387, 881)
         TableLayoutPanel9.TabIndex = 1
         ' 
         ' dgvCliente
@@ -240,7 +248,7 @@ Partial Class Material
         dgvCliente.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle2.BackColor = Color.FromArgb(CByte(96), CByte(62), CByte(136))
-        DataGridViewCellStyle2.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
+        DataGridViewCellStyle2.Font = New Font("Segoe UI Semibold", 12.0F, FontStyle.Bold)
         DataGridViewCellStyle2.ForeColor = Color.White
         DataGridViewCellStyle2.SelectionBackColor = Color.White
         DataGridViewCellStyle2.SelectionForeColor = Color.Black
@@ -267,24 +275,26 @@ Partial Class Material
         dgvCliente.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single
         DataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle7.BackColor = Color.White
-        DataGridViewCellStyle7.Font = New Font("Segoe UI", 9F)
+        DataGridViewCellStyle7.Font = New Font("Segoe UI", 9.0F)
         DataGridViewCellStyle7.ForeColor = SystemColors.InactiveCaptionText
         DataGridViewCellStyle7.SelectionBackColor = Color.White
         DataGridViewCellStyle7.SelectionForeColor = SystemColors.ControlText
         DataGridViewCellStyle7.WrapMode = DataGridViewTriState.True
         dgvCliente.RowHeadersDefaultCellStyle = DataGridViewCellStyle7
         dgvCliente.RowHeadersVisible = False
+        dgvCliente.RowHeadersWidth = 51
         DataGridViewCellStyle8.Font = New Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         DataGridViewCellStyle8.ForeColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
         DataGridViewCellStyle8.SelectionBackColor = Color.FromArgb(CByte(201), CByte(184), CByte(230))
         DataGridViewCellStyle8.SelectionForeColor = Color.Black
         dgvCliente.RowsDefaultCellStyle = DataGridViewCellStyle8
-        dgvCliente.Size = New Size(1214, 615)
+        dgvCliente.Size = New Size(1387, 819)
         dgvCliente.TabIndex = 0
         ' 
         ' IdMaterial
         ' 
         IdMaterial.HeaderText = "Id Material"
+        IdMaterial.MinimumWidth = 6
         IdMaterial.Name = "IdMaterial"
         IdMaterial.ReadOnly = True
         IdMaterial.Resizable = DataGridViewTriState.True
@@ -293,6 +303,7 @@ Partial Class Material
         ' Marca
         ' 
         Marca.HeaderText = "Marca"
+        Marca.MinimumWidth = 6
         Marca.Name = "Marca"
         Marca.ReadOnly = True
         Marca.SortMode = DataGridViewColumnSortMode.NotSortable
@@ -302,6 +313,7 @@ Partial Class Material
         DataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleCenter
         Tipo.DefaultCellStyle = DataGridViewCellStyle3
         Tipo.HeaderText = "Tipo"
+        Tipo.MinimumWidth = 6
         Tipo.Name = "Tipo"
         Tipo.ReadOnly = True
         Tipo.SortMode = DataGridViewColumnSortMode.NotSortable
@@ -311,6 +323,7 @@ Partial Class Material
         DataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleCenter
         Cantidad.DefaultCellStyle = DataGridViewCellStyle4
         Cantidad.HeaderText = "Cantidad"
+        Cantidad.MinimumWidth = 6
         Cantidad.Name = "Cantidad"
         Cantidad.ReadOnly = True
         Cantidad.SortMode = DataGridViewColumnSortMode.NotSortable
@@ -318,6 +331,7 @@ Partial Class Material
         ' UMedida
         ' 
         UMedida.HeaderText = "Unidad de Medida"
+        UMedida.MinimumWidth = 6
         UMedida.Name = "UMedida"
         UMedida.ReadOnly = True
         UMedida.SortMode = DataGridViewColumnSortMode.NotSortable
@@ -325,6 +339,7 @@ Partial Class Material
         ' FechaRegistro
         ' 
         FechaRegistro.HeaderText = "Fecha de Registro"
+        FechaRegistro.MinimumWidth = 6
         FechaRegistro.Name = "FechaRegistro"
         FechaRegistro.ReadOnly = True
         ' 
@@ -333,6 +348,7 @@ Partial Class Material
         DataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleCenter
         Estado.DefaultCellStyle = DataGridViewCellStyle5
         Estado.HeaderText = "Estado"
+        Estado.MinimumWidth = 6
         Estado.Name = "Estado"
         Estado.ReadOnly = True
         Estado.SortMode = DataGridViewColumnSortMode.NotSortable
@@ -343,10 +359,10 @@ Partial Class Material
         Panelr20.AutoScroll = True
         Panelr20.BackColor = SystemColors.ButtonFace
         Panelr20.Controls.Add(pEditar)
-        Panelr20.Location = New Point(1026, 615)
-        Panelr20.Margin = New Padding(0, 0, 0, 3)
+        Panelr20.Location = New Point(1171, 819)
+        Panelr20.Margin = New Padding(0, 0, 0, 4)
         Panelr20.Name = "Panelr20"
-        Panelr20.Size = New Size(151, 43)
+        Panelr20.Size = New Size(172, 58)
         Panelr20.TabIndex = 8
         ' 
         ' pEditar
@@ -356,10 +372,10 @@ Partial Class Material
         pEditar.Controls.Add(lbEditar)
         pEditar.Controls.Add(pcbEditar)
         pEditar.Cursor = Cursors.Hand
-        pEditar.Location = New Point(2, 2)
-        pEditar.Margin = New Padding(20, 10, 20, 10)
+        pEditar.Location = New Point(2, 3)
+        pEditar.Margin = New Padding(23, 13, 23, 13)
         pEditar.Name = "pEditar"
-        pEditar.Size = New Size(145, 37)
+        pEditar.Size = New Size(165, 50)
         pEditar.TabIndex = 2
         ' 
         ' lbEditar
@@ -368,9 +384,9 @@ Partial Class Material
         lbEditar.AutoSize = True
         lbEditar.Font = New Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lbEditar.ForeColor = Color.WhiteSmoke
-        lbEditar.Location = New Point(56, 6)
+        lbEditar.Location = New Point(63, 9)
         lbEditar.Name = "lbEditar"
-        lbEditar.Size = New Size(62, 25)
+        lbEditar.Size = New Size(77, 32)
         lbEditar.TabIndex = 1
         lbEditar.Text = "Editar"
         ' 
@@ -378,9 +394,10 @@ Partial Class Material
         ' 
         pcbEditar.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom
         pcbEditar.Image = My.Resources.Resources.EditBlanco
-        pcbEditar.Location = New Point(17, 6)
+        pcbEditar.Location = New Point(18, 8)
+        pcbEditar.Margin = New Padding(3, 4, 3, 4)
         pcbEditar.Name = "pcbEditar"
-        pcbEditar.Size = New Size(25, 25)
+        pcbEditar.Size = New Size(29, 34)
         pcbEditar.SizeMode = PictureBoxSizeMode.StretchImage
         pcbEditar.TabIndex = 0
         pcbEditar.TabStop = False
@@ -390,10 +407,10 @@ Partial Class Material
         Panelr3.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         Panelr3.BackColor = SystemColors.ButtonFace
         Panelr3.Controls.Add(Panelr4)
-        Panelr3.Location = New Point(50, 177)
-        Panelr3.Margin = New Padding(50, 15, 20, 15)
+        Panelr3.Location = New Point(57, 236)
+        Panelr3.Margin = New Padding(57, 20, 23, 20)
         Panelr3.Name = "Panelr3"
-        Panelr3.Size = New Size(1220, 186)
+        Panelr3.Size = New Size(1394, 248)
         Panelr3.TabIndex = 1
         ' 
         ' Panelr4
@@ -401,9 +418,10 @@ Partial Class Material
         Panelr4.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         Panelr4.BackColor = Color.White
         Panelr4.Controls.Add(TableLayoutPanel3)
-        Panelr4.Location = New Point(2, 2)
+        Panelr4.Location = New Point(2, 3)
+        Panelr4.Margin = New Padding(3, 4, 3, 4)
         Panelr4.Name = "Panelr4"
-        Panelr4.Size = New Size(1214, 180)
+        Panelr4.Size = New Size(1387, 240)
         Panelr4.TabIndex = 0
         ' 
         ' TableLayoutPanel3
@@ -419,11 +437,12 @@ Partial Class Material
         TableLayoutPanel3.Controls.Add(TableLayoutPanel6, 1, 1)
         TableLayoutPanel3.Controls.Add(TableLayoutPanel8, 2, 1)
         TableLayoutPanel3.Location = New Point(0, 0)
+        TableLayoutPanel3.Margin = New Padding(3, 4, 3, 4)
         TableLayoutPanel3.Name = "TableLayoutPanel3"
         TableLayoutPanel3.RowCount = 2
-        TableLayoutPanel3.RowStyles.Add(New RowStyle(SizeType.Percent, 50F))
-        TableLayoutPanel3.RowStyles.Add(New RowStyle(SizeType.Percent, 50F))
-        TableLayoutPanel3.Size = New Size(1214, 180)
+        TableLayoutPanel3.RowStyles.Add(New RowStyle(SizeType.Percent, 50.0F))
+        TableLayoutPanel3.RowStyles.Add(New RowStyle(SizeType.Percent, 50.0F))
+        TableLayoutPanel3.Size = New Size(1387, 240)
         TableLayoutPanel3.TabIndex = 0
         ' 
         ' TableLayoutPanel10
@@ -436,12 +455,13 @@ Partial Class Material
         TableLayoutPanel10.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 4.38552141F))
         TableLayoutPanel10.Controls.Add(Panelr12, 1, 1)
         TableLayoutPanel10.Controls.Add(lbBuscar, 1, 0)
-        TableLayoutPanel10.Location = New Point(407, 3)
+        TableLayoutPanel10.Location = New Point(465, 4)
+        TableLayoutPanel10.Margin = New Padding(3, 4, 3, 4)
         TableLayoutPanel10.Name = "TableLayoutPanel10"
         TableLayoutPanel10.RowCount = 2
         TableLayoutPanel10.RowStyles.Add(New RowStyle(SizeType.Percent, 37.0277061F))
         TableLayoutPanel10.RowStyles.Add(New RowStyle(SizeType.Percent, 62.9722939F))
-        TableLayoutPanel10.Size = New Size(804, 84)
+        TableLayoutPanel10.Size = New Size(919, 112)
         TableLayoutPanel10.TabIndex = 9
         ' 
         ' Panelr12
@@ -449,10 +469,10 @@ Partial Class Material
         Panelr12.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         Panelr12.BackColor = SystemColors.ButtonFace
         Panelr12.Controls.Add(pBuscar)
-        Panelr12.Location = New Point(20, 31)
+        Panelr12.Location = New Point(23, 41)
         Panelr12.Margin = New Padding(0)
         Panelr12.Name = "Panelr12"
-        Panelr12.Size = New Size(748, 53)
+        Panelr12.Size = New Size(855, 71)
         Panelr12.TabIndex = 9
         ' 
         ' pBuscar
@@ -461,10 +481,10 @@ Partial Class Material
         pBuscar.BackColor = Color.FromArgb(CByte(250), CByte(250), CByte(250))
         pBuscar.Controls.Add(txtBuscar)
         pBuscar.Controls.Add(Panel2)
-        pBuscar.Location = New Point(2, 2)
-        pBuscar.Margin = New Padding(25, 20, 25, 20)
+        pBuscar.Location = New Point(2, 3)
+        pBuscar.Margin = New Padding(29, 27, 29, 27)
         pBuscar.Name = "pBuscar"
-        pBuscar.Size = New Size(742, 47)
+        pBuscar.Size = New Size(848, 63)
         pBuscar.TabIndex = 11
         ' 
         ' txtBuscar
@@ -472,10 +492,11 @@ Partial Class Material
         txtBuscar.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         txtBuscar.BackColor = Color.FromArgb(CByte(250), CByte(250), CByte(250))
         txtBuscar.BorderStyle = BorderStyle.None
-        txtBuscar.Font = New Font("Arial", 16F)
-        txtBuscar.Location = New Point(3, 12)
+        txtBuscar.Font = New Font("Arial", 16.0F)
+        txtBuscar.Location = New Point(3, 16)
+        txtBuscar.Margin = New Padding(3, 4, 3, 4)
         txtBuscar.Name = "txtBuscar"
-        txtBuscar.Size = New Size(680, 25)
+        txtBuscar.Size = New Size(777, 31)
         txtBuscar.TabIndex = 1
         ' 
         ' Panel2
@@ -483,18 +504,20 @@ Partial Class Material
         Panel2.BackColor = SystemColors.ButtonFace
         Panel2.Controls.Add(pcbBuscar)
         Panel2.Dock = DockStyle.Right
-        Panel2.Location = New Point(689, 0)
+        Panel2.Location = New Point(787, 0)
+        Panel2.Margin = New Padding(3, 4, 3, 4)
         Panel2.Name = "Panel2"
-        Panel2.Size = New Size(53, 47)
+        Panel2.Size = New Size(61, 63)
         Panel2.TabIndex = 0
         ' 
         ' pcbBuscar
         ' 
         pcbBuscar.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         pcbBuscar.Image = My.Resources.Resources.Buscar
-        pcbBuscar.Location = New Point(8, 5)
+        pcbBuscar.Location = New Point(9, 7)
+        pcbBuscar.Margin = New Padding(3, 4, 3, 4)
         pcbBuscar.Name = "pcbBuscar"
-        pcbBuscar.Size = New Size(37, 37)
+        pcbBuscar.Size = New Size(42, 49)
         pcbBuscar.SizeMode = PictureBoxSizeMode.StretchImage
         pcbBuscar.TabIndex = 0
         pcbBuscar.TabStop = False
@@ -506,9 +529,9 @@ Partial Class Material
         lbBuscar.BackColor = Color.White
         lbBuscar.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lbBuscar.ForeColor = Color.Gray
-        lbBuscar.Location = New Point(23, 0)
+        lbBuscar.Location = New Point(26, 0)
         lbBuscar.Name = "lbBuscar"
-        lbBuscar.Size = New Size(742, 31)
+        lbBuscar.Size = New Size(849, 41)
         lbBuscar.TabIndex = 10
         lbBuscar.Text = "Busqueda"
         lbBuscar.TextAlign = ContentAlignment.BottomLeft
@@ -522,22 +545,23 @@ Partial Class Material
         TableLayoutPanel4.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 80.4812851F))
         TableLayoutPanel4.Controls.Add(lbFiltro, 2, 1)
         TableLayoutPanel4.Controls.Add(pcbFiltro, 1, 1)
-        TableLayoutPanel4.Location = New Point(3, 3)
+        TableLayoutPanel4.Location = New Point(3, 4)
+        TableLayoutPanel4.Margin = New Padding(3, 4, 3, 4)
         TableLayoutPanel4.Name = "TableLayoutPanel4"
         TableLayoutPanel4.RowCount = 2
-        TableLayoutPanel4.RowStyles.Add(New RowStyle(SizeType.Percent, 50F))
-        TableLayoutPanel4.RowStyles.Add(New RowStyle(SizeType.Percent, 50F))
-        TableLayoutPanel4.Size = New Size(398, 84)
+        TableLayoutPanel4.RowStyles.Add(New RowStyle(SizeType.Percent, 50.0F))
+        TableLayoutPanel4.RowStyles.Add(New RowStyle(SizeType.Percent, 50.0F))
+        TableLayoutPanel4.Size = New Size(456, 112)
         TableLayoutPanel4.TabIndex = 4
         ' 
         ' lbFiltro
         ' 
         lbFiltro.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         lbFiltro.AutoSize = True
-        lbFiltro.Font = New Font("Segoe UI Semibold", 20F, FontStyle.Bold)
-        lbFiltro.Location = New Point(80, 42)
+        lbFiltro.Font = New Font("Segoe UI Semibold", 20.0F, FontStyle.Bold)
+        lbFiltro.Location = New Point(92, 56)
         lbFiltro.Name = "lbFiltro"
-        lbFiltro.Size = New Size(93, 42)
+        lbFiltro.Size = New Size(115, 56)
         lbFiltro.TabIndex = 2
         lbFiltro.Text = "Filtros"
         lbFiltro.TextAlign = ContentAlignment.MiddleCenter
@@ -546,9 +570,10 @@ Partial Class Material
         ' 
         pcbFiltro.Anchor = AnchorStyles.Left Or AnchorStyles.Right
         pcbFiltro.Image = My.Resources.Resources.filter
-        pcbFiltro.Location = New Point(37, 45)
+        pcbFiltro.Location = New Point(43, 60)
+        pcbFiltro.Margin = New Padding(3, 4, 3, 4)
         pcbFiltro.Name = "pcbFiltro"
-        pcbFiltro.Size = New Size(37, 36)
+        pcbFiltro.Size = New Size(43, 48)
         pcbFiltro.SizeMode = PictureBoxSizeMode.StretchImage
         pcbFiltro.TabIndex = 3
         pcbFiltro.TabStop = False
@@ -561,12 +586,13 @@ Partial Class Material
         TableLayoutPanel7.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 91.19374F))
         TableLayoutPanel7.Controls.Add(lbMarca, 1, 0)
         TableLayoutPanel7.Controls.Add(Panelr7, 1, 1)
-        TableLayoutPanel7.Location = New Point(3, 93)
+        TableLayoutPanel7.Location = New Point(3, 124)
+        TableLayoutPanel7.Margin = New Padding(3, 4, 3, 4)
         TableLayoutPanel7.Name = "TableLayoutPanel7"
         TableLayoutPanel7.RowCount = 2
         TableLayoutPanel7.RowStyles.Add(New RowStyle(SizeType.Percent, 34.52381F))
         TableLayoutPanel7.RowStyles.Add(New RowStyle(SizeType.Percent, 65.47619F))
-        TableLayoutPanel7.Size = New Size(398, 84)
+        TableLayoutPanel7.Size = New Size(456, 112)
         TableLayoutPanel7.TabIndex = 6
         ' 
         ' lbMarca
@@ -576,9 +602,9 @@ Partial Class Material
         lbMarca.BackColor = Color.White
         lbMarca.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lbMarca.ForeColor = Color.Gray
-        lbMarca.Location = New Point(38, 0)
+        lbMarca.Location = New Point(43, 0)
         lbMarca.Name = "lbMarca"
-        lbMarca.Size = New Size(357, 29)
+        lbMarca.Size = New Size(410, 38)
         lbMarca.TabIndex = 0
         lbMarca.Text = "Marca"
         lbMarca.TextAlign = ContentAlignment.BottomLeft
@@ -588,10 +614,10 @@ Partial Class Material
         Panelr7.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         Panelr7.BackColor = SystemColors.ButtonFace
         Panelr7.Controls.Add(pcmbRS)
-        Panelr7.Location = New Point(40, 32)
-        Panelr7.Margin = New Padding(5, 3, 10, 3)
+        Panelr7.Location = New Point(46, 42)
+        Panelr7.Margin = New Padding(6, 4, 11, 4)
         Panelr7.Name = "Panelr7"
-        Panelr7.Size = New Size(348, 49)
+        Panelr7.Size = New Size(399, 66)
         Panelr7.TabIndex = 1
         ' 
         ' pcmbRS
@@ -599,9 +625,10 @@ Partial Class Material
         pcmbRS.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         pcmbRS.BackColor = Color.FromArgb(CByte(250), CByte(250), CByte(250))
         pcmbRS.Controls.Add(cmbMarca)
-        pcmbRS.Location = New Point(2, 2)
+        pcmbRS.Location = New Point(2, 3)
+        pcmbRS.Margin = New Padding(3, 4, 3, 4)
         pcmbRS.Name = "pcmbRS"
-        pcmbRS.Size = New Size(342, 43)
+        pcmbRS.Size = New Size(392, 58)
         pcmbRS.TabIndex = 2
         ' 
         ' cmbMarca
@@ -610,25 +637,27 @@ Partial Class Material
         cmbMarca.BackColor = Color.FromArgb(CByte(250), CByte(250), CByte(250))
         cmbMarca.FlatStyle = FlatStyle.Flat
         cmbMarca.FormattingEnabled = True
-        cmbMarca.Location = New Point(3, 11)
+        cmbMarca.Location = New Point(3, 15)
+        cmbMarca.Margin = New Padding(3, 4, 3, 4)
         cmbMarca.Name = "cmbMarca"
-        cmbMarca.Size = New Size(344, 23)
+        cmbMarca.Size = New Size(394, 28)
         cmbMarca.TabIndex = 0
         ' 
         ' TableLayoutPanel6
         ' 
         TableLayoutPanel6.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TableLayoutPanel6.ColumnCount = 1
-        TableLayoutPanel6.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 100F))
-        TableLayoutPanel6.ColumnStyles.Add(New ColumnStyle(SizeType.Absolute, 20F))
+        TableLayoutPanel6.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 100.0F))
+        TableLayoutPanel6.ColumnStyles.Add(New ColumnStyle(SizeType.Absolute, 23.0F))
         TableLayoutPanel6.Controls.Add(lbTipo, 0, 0)
         TableLayoutPanel6.Controls.Add(Panelr8, 0, 1)
-        TableLayoutPanel6.Location = New Point(407, 93)
+        TableLayoutPanel6.Location = New Point(465, 124)
+        TableLayoutPanel6.Margin = New Padding(3, 4, 3, 4)
         TableLayoutPanel6.Name = "TableLayoutPanel6"
         TableLayoutPanel6.RowCount = 2
         TableLayoutPanel6.RowStyles.Add(New RowStyle(SizeType.Percent, 34.52381F))
         TableLayoutPanel6.RowStyles.Add(New RowStyle(SizeType.Percent, 65.47619F))
-        TableLayoutPanel6.Size = New Size(398, 84)
+        TableLayoutPanel6.Size = New Size(456, 112)
         TableLayoutPanel6.TabIndex = 7
         ' 
         ' lbTipo
@@ -638,10 +667,10 @@ Partial Class Material
         lbTipo.BackColor = Color.White
         lbTipo.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lbTipo.ForeColor = Color.Gray
-        lbTipo.Location = New Point(25, 0)
-        lbTipo.Margin = New Padding(25, 0, 3, 0)
+        lbTipo.Location = New Point(29, 0)
+        lbTipo.Margin = New Padding(29, 0, 3, 0)
         lbTipo.Name = "lbTipo"
-        lbTipo.Size = New Size(370, 29)
+        lbTipo.Size = New Size(424, 38)
         lbTipo.TabIndex = 0
         lbTipo.Text = "Tipo"
         lbTipo.TextAlign = ContentAlignment.BottomLeft
@@ -651,10 +680,10 @@ Partial Class Material
         Panelr8.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         Panelr8.BackColor = SystemColors.ButtonFace
         Panelr8.Controls.Add(pcmbTipo)
-        Panelr8.Location = New Point(25, 32)
-        Panelr8.Margin = New Padding(25, 3, 25, 3)
+        Panelr8.Location = New Point(29, 42)
+        Panelr8.Margin = New Padding(29, 4, 29, 4)
         Panelr8.Name = "Panelr8"
-        Panelr8.Size = New Size(348, 49)
+        Panelr8.Size = New Size(398, 66)
         Panelr8.TabIndex = 1
         ' 
         ' pcmbTipo
@@ -662,9 +691,10 @@ Partial Class Material
         pcmbTipo.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         pcmbTipo.BackColor = Color.FromArgb(CByte(250), CByte(250), CByte(250))
         pcmbTipo.Controls.Add(cmbTipo)
-        pcmbTipo.Location = New Point(2, 2)
+        pcmbTipo.Location = New Point(2, 3)
+        pcmbTipo.Margin = New Padding(3, 4, 3, 4)
         pcmbTipo.Name = "pcmbTipo"
-        pcmbTipo.Size = New Size(342, 43)
+        pcmbTipo.Size = New Size(391, 58)
         pcmbTipo.TabIndex = 1
         ' 
         ' cmbTipo
@@ -673,9 +703,10 @@ Partial Class Material
         cmbTipo.BackColor = Color.FromArgb(CByte(250), CByte(250), CByte(250))
         cmbTipo.FlatStyle = FlatStyle.Flat
         cmbTipo.FormattingEnabled = True
-        cmbTipo.Location = New Point(3, 11)
+        cmbTipo.Location = New Point(3, 15)
+        cmbTipo.Margin = New Padding(3, 4, 3, 4)
         cmbTipo.Name = "cmbTipo"
-        cmbTipo.Size = New Size(343, 23)
+        cmbTipo.Size = New Size(391, 28)
         cmbTipo.TabIndex = 0
         ' 
         ' TableLayoutPanel8
@@ -686,12 +717,13 @@ Partial Class Material
         TableLayoutPanel8.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 8.966862F))
         TableLayoutPanel8.Controls.Add(lbEstado, 0, 0)
         TableLayoutPanel8.Controls.Add(Panelr15, 0, 1)
-        TableLayoutPanel8.Location = New Point(811, 93)
+        TableLayoutPanel8.Location = New Point(927, 124)
+        TableLayoutPanel8.Margin = New Padding(3, 4, 3, 4)
         TableLayoutPanel8.Name = "TableLayoutPanel8"
         TableLayoutPanel8.RowCount = 2
         TableLayoutPanel8.RowStyles.Add(New RowStyle(SizeType.Percent, 34.52381F))
         TableLayoutPanel8.RowStyles.Add(New RowStyle(SizeType.Percent, 65.47619F))
-        TableLayoutPanel8.Size = New Size(400, 84)
+        TableLayoutPanel8.Size = New Size(457, 112)
         TableLayoutPanel8.TabIndex = 8
         ' 
         ' lbEstado
@@ -701,10 +733,10 @@ Partial Class Material
         lbEstado.BackColor = Color.White
         lbEstado.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lbEstado.ForeColor = Color.Gray
-        lbEstado.Location = New Point(10, 0)
-        lbEstado.Margin = New Padding(10, 0, 3, 0)
+        lbEstado.Location = New Point(11, 0)
+        lbEstado.Margin = New Padding(11, 0, 3, 0)
         lbEstado.Name = "lbEstado"
-        lbEstado.Size = New Size(351, 29)
+        lbEstado.Size = New Size(402, 38)
         lbEstado.TabIndex = 0
         lbEstado.Text = "Estado"
         lbEstado.TextAlign = ContentAlignment.BottomLeft
@@ -714,10 +746,10 @@ Partial Class Material
         Panelr15.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         Panelr15.BackColor = SystemColors.ButtonFace
         Panelr15.Controls.Add(pcmbEstado)
-        Panelr15.Location = New Point(10, 32)
-        Panelr15.Margin = New Padding(10, 3, 3, 3)
+        Panelr15.Location = New Point(11, 42)
+        Panelr15.Margin = New Padding(11, 4, 3, 4)
         Panelr15.Name = "Panelr15"
-        Panelr15.Size = New Size(351, 49)
+        Panelr15.Size = New Size(402, 66)
         Panelr15.TabIndex = 1
         ' 
         ' pcmbEstado
@@ -725,9 +757,10 @@ Partial Class Material
         pcmbEstado.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         pcmbEstado.BackColor = Color.FromArgb(CByte(250), CByte(250), CByte(250))
         pcmbEstado.Controls.Add(cmbEstado)
-        pcmbEstado.Location = New Point(2, 2)
+        pcmbEstado.Location = New Point(2, 3)
+        pcmbEstado.Margin = New Padding(3, 4, 3, 4)
         pcmbEstado.Name = "pcmbEstado"
-        pcmbEstado.Size = New Size(345, 43)
+        pcmbEstado.Size = New Size(395, 58)
         pcmbEstado.TabIndex = 3
         ' 
         ' cmbEstado
@@ -736,9 +769,10 @@ Partial Class Material
         cmbEstado.BackColor = Color.FromArgb(CByte(250), CByte(250), CByte(250))
         cmbEstado.FlatStyle = FlatStyle.Flat
         cmbEstado.FormattingEnabled = True
-        cmbEstado.Location = New Point(3, 11)
+        cmbEstado.Location = New Point(3, 15)
+        cmbEstado.Margin = New Padding(3, 4, 3, 4)
         cmbEstado.Name = "cmbEstado"
-        cmbEstado.Size = New Size(349, 23)
+        cmbEstado.Size = New Size(399, 28)
         cmbEstado.TabIndex = 0
         ' 
         ' Panelr1
@@ -746,10 +780,10 @@ Partial Class Material
         Panelr1.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         Panelr1.BackColor = SystemColors.ButtonFace
         Panelr1.Controls.Add(Panelr2)
-        Panelr1.Location = New Point(50, 20)
-        Panelr1.Margin = New Padding(50, 20, 20, 15)
+        Panelr1.Location = New Point(57, 27)
+        Panelr1.Margin = New Padding(57, 27, 23, 20)
         Panelr1.Name = "Panelr1"
-        Panelr1.Size = New Size(1220, 127)
+        Panelr1.Size = New Size(1394, 169)
         Panelr1.TabIndex = 0
         ' 
         ' Panelr2
@@ -757,9 +791,10 @@ Partial Class Material
         Panelr2.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         Panelr2.BackColor = Color.White
         Panelr2.Controls.Add(TableLayoutPanel2)
-        Panelr2.Location = New Point(2, 2)
+        Panelr2.Location = New Point(2, 3)
+        Panelr2.Margin = New Padding(3, 4, 3, 4)
         Panelr2.Name = "Panelr2"
-        Panelr2.Size = New Size(1214, 121)
+        Panelr2.Size = New Size(1387, 161)
         Panelr2.TabIndex = 0
         ' 
         ' TableLayoutPanel2
@@ -773,11 +808,12 @@ Partial Class Material
         TableLayoutPanel2.Controls.Add(Panelr9, 1, 1)
         TableLayoutPanel2.Controls.Add(Panelr10, 2, 1)
         TableLayoutPanel2.Location = New Point(0, 0)
+        TableLayoutPanel2.Margin = New Padding(3, 4, 3, 4)
         TableLayoutPanel2.Name = "TableLayoutPanel2"
         TableLayoutPanel2.RowCount = 2
-        TableLayoutPanel2.RowStyles.Add(New RowStyle(SizeType.Percent, 50F))
-        TableLayoutPanel2.RowStyles.Add(New RowStyle(SizeType.Percent, 50F))
-        TableLayoutPanel2.Size = New Size(1214, 121)
+        TableLayoutPanel2.RowStyles.Add(New RowStyle(SizeType.Percent, 50.0F))
+        TableLayoutPanel2.RowStyles.Add(New RowStyle(SizeType.Percent, 50.0F))
+        TableLayoutPanel2.Size = New Size(1387, 161)
         TableLayoutPanel2.TabIndex = 0
         ' 
         ' TableLayoutPanel5
@@ -795,19 +831,19 @@ Partial Class Material
         TableLayoutPanel5.Name = "TableLayoutPanel5"
         TableLayoutPanel5.RowCount = 2
         TableLayoutPanel2.SetRowSpan(TableLayoutPanel5, 2)
-        TableLayoutPanel5.RowStyles.Add(New RowStyle(SizeType.Percent, 60F))
-        TableLayoutPanel5.RowStyles.Add(New RowStyle(SizeType.Percent, 40F))
-        TableLayoutPanel5.Size = New Size(600, 121)
+        TableLayoutPanel5.RowStyles.Add(New RowStyle(SizeType.Percent, 60.0F))
+        TableLayoutPanel5.RowStyles.Add(New RowStyle(SizeType.Percent, 40.0F))
+        TableLayoutPanel5.Size = New Size(686, 161)
         TableLayoutPanel5.TabIndex = 6
         ' 
         ' lbTitulo
         ' 
         lbTitulo.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         lbTitulo.AutoSize = True
-        lbTitulo.Font = New Font("Segoe UI Semibold", 24F, FontStyle.Bold)
-        lbTitulo.Location = New Point(88, 0)
+        lbTitulo.Font = New Font("Segoe UI Semibold", 24.0F, FontStyle.Bold)
+        lbTitulo.Location = New Point(101, 0)
         lbTitulo.Name = "lbTitulo"
-        lbTitulo.Size = New Size(304, 72)
+        lbTitulo.Size = New Size(374, 96)
         lbTitulo.TabIndex = 0
         lbTitulo.Text = "Gestion de material"
         lbTitulo.TextAlign = ContentAlignment.BottomLeft
@@ -816,10 +852,10 @@ Partial Class Material
         ' 
         pcbLogo.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         pcbLogo.Image = My.Resources.Resources.fabric
-        pcbLogo.Location = New Point(33, 28)
-        pcbLogo.Margin = New Padding(3, 3, 3, 0)
+        pcbLogo.Location = New Point(38, 37)
+        pcbLogo.Margin = New Padding(3, 4, 3, 0)
         pcbLogo.Name = "pcbLogo"
-        pcbLogo.Size = New Size(49, 44)
+        pcbLogo.Size = New Size(57, 59)
         pcbLogo.SizeMode = PictureBoxSizeMode.StretchImage
         pcbLogo.TabIndex = 1
         pcbLogo.TabStop = False
@@ -828,11 +864,11 @@ Partial Class Material
         ' 
         lbSubTitulo.AutoSize = True
         lbSubTitulo.Dock = DockStyle.Fill
-        lbSubTitulo.Font = New Font("Segoe UI", 10F)
-        lbSubTitulo.Location = New Point(85, 72)
+        lbSubTitulo.Font = New Font("Segoe UI", 10.0F)
+        lbSubTitulo.Location = New Point(98, 96)
         lbSubTitulo.Margin = New Padding(0)
         lbSubTitulo.Name = "lbSubTitulo"
-        lbSubTitulo.Size = New Size(515, 49)
+        lbSubTitulo.Size = New Size(588, 65)
         lbSubTitulo.TabIndex = 0
         lbSubTitulo.Text = "Control de inventario"
         ' 
@@ -842,10 +878,10 @@ Partial Class Material
         Panelr9.AutoScroll = True
         Panelr9.BackColor = SystemColors.ButtonFace
         Panelr9.Controls.Add(pExcel)
-        Panelr9.Location = New Point(600, 60)
-        Panelr9.Margin = New Padding(0, 0, 10, 3)
+        Panelr9.Location = New Point(686, 80)
+        Panelr9.Margin = New Padding(0, 0, 11, 4)
         Panelr9.Name = "Panelr9"
-        Panelr9.Size = New Size(301, 58)
+        Panelr9.Size = New Size(344, 77)
         Panelr9.TabIndex = 4
         ' 
         ' pExcel
@@ -855,10 +891,10 @@ Partial Class Material
         pExcel.Controls.Add(lbExcel)
         pExcel.Controls.Add(pcbExcel)
         pExcel.Cursor = Cursors.Hand
-        pExcel.Location = New Point(2, 2)
-        pExcel.Margin = New Padding(20, 10, 20, 10)
+        pExcel.Location = New Point(2, 3)
+        pExcel.Margin = New Padding(23, 13, 23, 13)
         pExcel.Name = "pExcel"
-        pExcel.Size = New Size(295, 52)
+        pExcel.Size = New Size(337, 69)
         pExcel.TabIndex = 2
         ' 
         ' lbExcel
@@ -867,9 +903,9 @@ Partial Class Material
         lbExcel.AutoSize = True
         lbExcel.Font = New Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lbExcel.ForeColor = Color.WhiteSmoke
-        lbExcel.Location = New Point(83, 14)
+        lbExcel.Location = New Point(95, 19)
         lbExcel.Name = "lbExcel"
-        lbExcel.Size = New Size(150, 25)
+        lbExcel.Size = New Size(188, 32)
         lbExcel.TabIndex = 1
         lbExcel.Text = "Exportar a Excel"
         ' 
@@ -877,9 +913,10 @@ Partial Class Material
         ' 
         pcbExcel.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom
         pcbExcel.Image = My.Resources.Resources.xls_fileBlanco
-        pcbExcel.Location = New Point(32, 11)
+        pcbExcel.Location = New Point(37, 15)
+        pcbExcel.Margin = New Padding(3, 4, 3, 4)
         pcbExcel.Name = "pcbExcel"
-        pcbExcel.Size = New Size(30, 30)
+        pcbExcel.Size = New Size(34, 40)
         pcbExcel.SizeMode = PictureBoxSizeMode.StretchImage
         pcbExcel.TabIndex = 0
         pcbExcel.TabStop = False
@@ -889,10 +926,10 @@ Partial Class Material
         Panelr10.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         Panelr10.BackColor = SystemColors.ButtonFace
         Panelr10.Controls.Add(pAgregar)
-        Panelr10.Location = New Point(921, 60)
-        Panelr10.Margin = New Padding(10, 0, 3, 3)
+        Panelr10.Location = New Point(1052, 80)
+        Panelr10.Margin = New Padding(11, 0, 3, 4)
         Panelr10.Name = "Panelr10"
-        Panelr10.Size = New Size(290, 58)
+        Panelr10.Size = New Size(332, 77)
         Panelr10.TabIndex = 5
         ' 
         ' pAgregar
@@ -902,10 +939,10 @@ Partial Class Material
         pAgregar.Controls.Add(lbAgregar)
         pAgregar.Controls.Add(pcbAgregar)
         pAgregar.Cursor = Cursors.Hand
-        pAgregar.Location = New Point(2, 2)
-        pAgregar.Margin = New Padding(20, 10, 20, 10)
+        pAgregar.Location = New Point(2, 3)
+        pAgregar.Margin = New Padding(23, 13, 23, 13)
         pAgregar.Name = "pAgregar"
-        pAgregar.Size = New Size(284, 52)
+        pAgregar.Size = New Size(326, 69)
         pAgregar.TabIndex = 3
         ' 
         ' lbAgregar
@@ -914,9 +951,9 @@ Partial Class Material
         lbAgregar.AutoSize = True
         lbAgregar.Font = New Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lbAgregar.ForeColor = Color.WhiteSmoke
-        lbAgregar.Location = New Point(71, 14)
+        lbAgregar.Location = New Point(81, 19)
         lbAgregar.Name = "lbAgregar"
-        lbAgregar.Size = New Size(158, 25)
+        lbAgregar.Size = New Size(200, 32)
         lbAgregar.TabIndex = 1
         lbAgregar.Text = "Agregar Material"
         ' 
@@ -924,9 +961,10 @@ Partial Class Material
         ' 
         pcbAgregar.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom
         pcbAgregar.Image = My.Resources.Resources.addBoxBlanco
-        pcbAgregar.Location = New Point(32, 11)
+        pcbAgregar.Location = New Point(38, 15)
+        pcbAgregar.Margin = New Padding(3, 4, 3, 4)
         pcbAgregar.Name = "pcbAgregar"
-        pcbAgregar.Size = New Size(30, 30)
+        pcbAgregar.Size = New Size(34, 40)
         pcbAgregar.SizeMode = PictureBoxSizeMode.StretchImage
         pcbAgregar.TabIndex = 0
         pcbAgregar.TabStop = False
@@ -936,11 +974,11 @@ Partial Class Material
         PanelDerecho.BackColor = SystemColors.ButtonFace
         PanelDerecho.Controls.Add(Panel1)
         PanelDerecho.Dock = DockStyle.Fill
-        PanelDerecho.Location = New Point(1300, 0)
-        PanelDerecho.Margin = New Padding(10, 0, 0, 0)
+        PanelDerecho.Location = New Point(1485, 0)
+        PanelDerecho.Margin = New Padding(11, 0, 0, 0)
         PanelDerecho.Name = "PanelDerecho"
         TableLayoutPanel1.SetRowSpan(PanelDerecho, 3)
-        PanelDerecho.Size = New Size(420, 1080)
+        PanelDerecho.Size = New Size(481, 1440)
         PanelDerecho.TabIndex = 3
         ' 
         ' Panel1
@@ -949,18 +987,18 @@ Partial Class Material
         Panel1.Controls.Add(TableLayoutPanel11)
         Panel1.Dock = DockStyle.Fill
         Panel1.Location = New Point(0, 0)
-        Panel1.Margin = New Padding(6, 0, 0, 0)
+        Panel1.Margin = New Padding(7, 0, 0, 0)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(420, 1080)
+        Panel1.Size = New Size(481, 1440)
         Panel1.TabIndex = 0
         ' 
         ' TableLayoutPanel11
         ' 
         TableLayoutPanel11.ColumnCount = 4
-        TableLayoutPanel11.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 6.142999F))
+        TableLayoutPanel11.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 6.14299965F))
+        TableLayoutPanel11.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 43.8570061F))
         TableLayoutPanel11.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 43.8570023F))
-        TableLayoutPanel11.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 43.857F))
-        TableLayoutPanel11.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 6.1429987F))
+        TableLayoutPanel11.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 6.142999F))
         TableLayoutPanel11.Controls.Add(Panelr11, 1, 1)
         TableLayoutPanel11.Controls.Add(TableLayoutPanel12, 1, 2)
         TableLayoutPanel11.Controls.Add(TableLayoutPanel13, 1, 3)
@@ -969,6 +1007,7 @@ Partial Class Material
         TableLayoutPanel11.Controls.Add(Panelr16, 1, 5)
         TableLayoutPanel11.Dock = DockStyle.Fill
         TableLayoutPanel11.Location = New Point(0, 0)
+        TableLayoutPanel11.Margin = New Padding(3, 4, 3, 4)
         TableLayoutPanel11.Name = "TableLayoutPanel11"
         TableLayoutPanel11.RowCount = 8
         TableLayoutPanel11.RowStyles.Add(New RowStyle(SizeType.Percent, 7.256111F))
@@ -979,7 +1018,7 @@ Partial Class Material
         TableLayoutPanel11.RowStyles.Add(New RowStyle(SizeType.Percent, 6.60082865F))
         TableLayoutPanel11.RowStyles.Add(New RowStyle(SizeType.Percent, 6.60492134F))
         TableLayoutPanel11.RowStyles.Add(New RowStyle(SizeType.Percent, 5.48859739F))
-        TableLayoutPanel11.Size = New Size(420, 1080)
+        TableLayoutPanel11.Size = New Size(481, 1440)
         TableLayoutPanel11.TabIndex = 0
         ' 
         ' Panelr11
@@ -987,9 +1026,10 @@ Partial Class Material
         Panelr11.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TableLayoutPanel11.SetColumnSpan(Panelr11, 2)
         Panelr11.Controls.Add(pcbMaterial)
-        Panelr11.Location = New Point(28, 81)
+        Panelr11.Location = New Point(32, 108)
+        Panelr11.Margin = New Padding(3, 4, 3, 4)
         Panelr11.Name = "Panelr11"
-        Panelr11.Size = New Size(362, 267)
+        Panelr11.Size = New Size(414, 356)
         Panelr11.TabIndex = 3
         ' 
         ' pcbMaterial
@@ -997,9 +1037,9 @@ Partial Class Material
         pcbMaterial.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         pcbMaterial.Image = My.Resources.Resources.fabric
         pcbMaterial.Location = New Point(0, 0)
-        pcbMaterial.Margin = New Padding(3, 3, 3, 0)
+        pcbMaterial.Margin = New Padding(3, 4, 3, 0)
         pcbMaterial.Name = "pcbMaterial"
-        pcbMaterial.Size = New Size(362, 267)
+        pcbMaterial.Size = New Size(414, 356)
         pcbMaterial.SizeMode = PictureBoxSizeMode.StretchImage
         pcbMaterial.TabIndex = 2
         pcbMaterial.TabStop = False
@@ -1009,15 +1049,18 @@ Partial Class Material
         TableLayoutPanel12.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TableLayoutPanel12.ColumnCount = 1
         TableLayoutPanel11.SetColumnSpan(TableLayoutPanel12, 2)
-        TableLayoutPanel12.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50F))
+        TableLayoutPanel12.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 100.0F))
         TableLayoutPanel12.Controls.Add(lbCantidadUMedidaFechaR, 0, 1)
         TableLayoutPanel12.Controls.Add(lbTipoMarca, 0, 0)
-        TableLayoutPanel12.Location = New Point(28, 354)
+        TableLayoutPanel12.Controls.Add(Panel3, 0, 2)
+        TableLayoutPanel12.Location = New Point(32, 472)
+        TableLayoutPanel12.Margin = New Padding(3, 4, 3, 4)
         TableLayoutPanel12.Name = "TableLayoutPanel12"
-        TableLayoutPanel12.RowCount = 2
-        TableLayoutPanel12.RowStyles.Add(New RowStyle(SizeType.Percent, 50F))
-        TableLayoutPanel12.RowStyles.Add(New RowStyle(SizeType.Percent, 50F))
-        TableLayoutPanel12.Size = New Size(362, 108)
+        TableLayoutPanel12.RowCount = 3
+        TableLayoutPanel12.RowStyles.Add(New RowStyle(SizeType.Percent, 46.43727F))
+        TableLayoutPanel12.RowStyles.Add(New RowStyle(SizeType.Percent, 46.4372749F))
+        TableLayoutPanel12.RowStyles.Add(New RowStyle(SizeType.Percent, 7.12545F))
+        TableLayoutPanel12.Size = New Size(414, 144)
         TableLayoutPanel12.TabIndex = 4
         ' 
         ' lbCantidadUMedidaFechaR
@@ -1025,9 +1068,9 @@ Partial Class Material
         lbCantidadUMedidaFechaR.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         lbCantidadUMedidaFechaR.AutoSize = True
         lbCantidadUMedidaFechaR.Font = New Font("Arial", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        lbCantidadUMedidaFechaR.Location = New Point(3, 54)
+        lbCantidadUMedidaFechaR.Location = New Point(3, 66)
         lbCantidadUMedidaFechaR.Name = "lbCantidadUMedidaFechaR"
-        lbCantidadUMedidaFechaR.Size = New Size(356, 54)
+        lbCantidadUMedidaFechaR.Size = New Size(408, 66)
         lbCantidadUMedidaFechaR.TabIndex = 1
         lbCantidadUMedidaFechaR.Text = "20 kg, 30 / 03 / 2026"
         lbCantidadUMedidaFechaR.TextAlign = ContentAlignment.MiddleLeft
@@ -1039,43 +1082,54 @@ Partial Class Material
         lbTipoMarca.Font = New Font("Arial Rounded MT Bold", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         lbTipoMarca.Location = New Point(3, 0)
         lbTipoMarca.Name = "lbTipoMarca"
-        lbTipoMarca.Size = New Size(356, 54)
+        lbTipoMarca.Size = New Size(408, 66)
         lbTipoMarca.TabIndex = 0
         lbTipoMarca.Text = "Cemento Monterrey"
         lbTipoMarca.TextAlign = ContentAlignment.BottomLeft
+        ' 
+        ' Panel3
+        ' 
+        Panel3.BackColor = Color.Silver
+        Panel3.Dock = DockStyle.Fill
+        Panel3.Location = New Point(3, 136)
+        Panel3.Margin = New Padding(3, 4, 3, 4)
+        Panel3.Name = "Panel3"
+        Panel3.Size = New Size(408, 4)
+        Panel3.TabIndex = 2
         ' 
         ' TableLayoutPanel13
         ' 
         TableLayoutPanel13.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TableLayoutPanel13.ColumnCount = 1
         TableLayoutPanel11.SetColumnSpan(TableLayoutPanel13, 2)
-        TableLayoutPanel13.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 100F))
+        TableLayoutPanel13.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 100.0F))
         TableLayoutPanel13.Controls.Add(lbPrecioVentaUMedida, 0, 5)
         TableLayoutPanel13.Controls.Add(lbsubPrecioVenta, 0, 4)
         TableLayoutPanel13.Controls.Add(lbUltimoUso, 0, 3)
         TableLayoutPanel13.Controls.Add(lbsubUltimoUso, 0, 2)
         TableLayoutPanel13.Controls.Add(lbProveedorPrincipal, 0, 1)
         TableLayoutPanel13.Controls.Add(lbsubProveedor, 0, 0)
-        TableLayoutPanel13.Location = New Point(28, 468)
+        TableLayoutPanel13.Location = New Point(32, 624)
+        TableLayoutPanel13.Margin = New Padding(3, 4, 3, 4)
         TableLayoutPanel13.Name = "TableLayoutPanel13"
         TableLayoutPanel13.RowCount = 6
-        TableLayoutPanel13.RowStyles.Add(New RowStyle(SizeType.Percent, 16.666666F))
-        TableLayoutPanel13.RowStyles.Add(New RowStyle(SizeType.Percent, 16.666666F))
-        TableLayoutPanel13.RowStyles.Add(New RowStyle(SizeType.Percent, 16.666666F))
-        TableLayoutPanel13.RowStyles.Add(New RowStyle(SizeType.Percent, 16.666666F))
-        TableLayoutPanel13.RowStyles.Add(New RowStyle(SizeType.Percent, 16.666666F))
-        TableLayoutPanel13.RowStyles.Add(New RowStyle(SizeType.Percent, 16.666666F))
-        TableLayoutPanel13.Size = New Size(362, 190)
+        TableLayoutPanel13.RowStyles.Add(New RowStyle(SizeType.Percent, 16.498148F))
+        TableLayoutPanel13.RowStyles.Add(New RowStyle(SizeType.Percent, 16.4981365F))
+        TableLayoutPanel13.RowStyles.Add(New RowStyle(SizeType.Percent, 16.4981365F))
+        TableLayoutPanel13.RowStyles.Add(New RowStyle(SizeType.Percent, 16.4981365F))
+        TableLayoutPanel13.RowStyles.Add(New RowStyle(SizeType.Percent, 16.4981365F))
+        TableLayoutPanel13.RowStyles.Add(New RowStyle(SizeType.Percent, 16.4981365F))
+        TableLayoutPanel13.Size = New Size(414, 254)
         TableLayoutPanel13.TabIndex = 5
         ' 
         ' lbPrecioVentaUMedida
         ' 
         lbPrecioVentaUMedida.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         lbPrecioVentaUMedida.AutoSize = True
-        lbPrecioVentaUMedida.Font = New Font("Arial", 14F)
-        lbPrecioVentaUMedida.Location = New Point(3, 155)
+        lbPrecioVentaUMedida.Font = New Font("Arial", 14.0F)
+        lbPrecioVentaUMedida.Location = New Point(3, 210)
         lbPrecioVentaUMedida.Name = "lbPrecioVentaUMedida"
-        lbPrecioVentaUMedida.Size = New Size(356, 35)
+        lbPrecioVentaUMedida.Size = New Size(408, 44)
         lbPrecioVentaUMedida.TabIndex = 8
         lbPrecioVentaUMedida.Text = "250& por kg"
         ' 
@@ -1083,10 +1137,10 @@ Partial Class Material
         ' 
         lbsubPrecioVenta.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         lbsubPrecioVenta.AutoSize = True
-        lbsubPrecioVenta.Font = New Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        lbsubPrecioVenta.Location = New Point(3, 124)
+        lbsubPrecioVenta.Font = New Font("Arial Rounded MT Bold", 18.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        lbsubPrecioVenta.Location = New Point(3, 168)
         lbsubPrecioVenta.Name = "lbsubPrecioVenta"
-        lbsubPrecioVenta.Size = New Size(356, 31)
+        lbsubPrecioVenta.Size = New Size(408, 42)
         lbsubPrecioVenta.TabIndex = 7
         lbsubPrecioVenta.Text = "Precio venta:"
         lbsubPrecioVenta.TextAlign = ContentAlignment.BottomLeft
@@ -1095,10 +1149,10 @@ Partial Class Material
         ' 
         lbUltimoUso.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         lbUltimoUso.AutoSize = True
-        lbUltimoUso.Font = New Font("Arial", 14F)
-        lbUltimoUso.Location = New Point(3, 93)
+        lbUltimoUso.Font = New Font("Arial", 14.0F)
+        lbUltimoUso.Location = New Point(3, 126)
         lbUltimoUso.Name = "lbUltimoUso"
-        lbUltimoUso.Size = New Size(356, 31)
+        lbUltimoUso.Size = New Size(408, 42)
         lbUltimoUso.TabIndex = 6
         lbUltimoUso.Text = "20 kg, 30 / 03 / 2026"
         ' 
@@ -1106,10 +1160,10 @@ Partial Class Material
         ' 
         lbsubUltimoUso.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         lbsubUltimoUso.AutoSize = True
-        lbsubUltimoUso.Font = New Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        lbsubUltimoUso.Location = New Point(3, 62)
+        lbsubUltimoUso.Font = New Font("Arial Rounded MT Bold", 18.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        lbsubUltimoUso.Location = New Point(3, 84)
         lbsubUltimoUso.Name = "lbsubUltimoUso"
-        lbsubUltimoUso.Size = New Size(356, 31)
+        lbsubUltimoUso.Size = New Size(408, 42)
         lbsubUltimoUso.TabIndex = 5
         lbsubUltimoUso.Text = "Ultimo uso:"
         lbsubUltimoUso.TextAlign = ContentAlignment.BottomLeft
@@ -1118,10 +1172,10 @@ Partial Class Material
         ' 
         lbProveedorPrincipal.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         lbProveedorPrincipal.AutoSize = True
-        lbProveedorPrincipal.Font = New Font("Arial", 14F)
-        lbProveedorPrincipal.Location = New Point(3, 31)
+        lbProveedorPrincipal.Font = New Font("Arial", 14.0F)
+        lbProveedorPrincipal.Location = New Point(3, 42)
         lbProveedorPrincipal.Name = "lbProveedorPrincipal"
-        lbProveedorPrincipal.Size = New Size(356, 31)
+        lbProveedorPrincipal.Size = New Size(408, 42)
         lbProveedorPrincipal.TabIndex = 2
         lbProveedorPrincipal.Text = "Ferretera Norte"
         ' 
@@ -1129,10 +1183,10 @@ Partial Class Material
         ' 
         lbsubProveedor.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         lbsubProveedor.AutoSize = True
-        lbsubProveedor.Font = New Font("Arial Rounded MT Bold", 18F)
+        lbsubProveedor.Font = New Font("Arial Rounded MT Bold", 18.0F)
         lbsubProveedor.Location = New Point(3, 0)
         lbsubProveedor.Name = "lbsubProveedor"
-        lbsubProveedor.Size = New Size(356, 31)
+        lbsubProveedor.Size = New Size(408, 42)
         lbsubProveedor.TabIndex = 1
         lbsubProveedor.Text = "Proveedor principal:"
         lbsubProveedor.TextAlign = ContentAlignment.BottomLeft
@@ -1142,25 +1196,59 @@ Partial Class Material
         TableLayoutPanel14.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         TableLayoutPanel14.ColumnCount = 1
         TableLayoutPanel11.SetColumnSpan(TableLayoutPanel14, 2)
-        TableLayoutPanel14.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50F))
-        TableLayoutPanel14.Controls.Add(lbDesripcionUltimoUso, 0, 0)
-        TableLayoutPanel14.Location = New Point(28, 664)
+        TableLayoutPanel14.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 100.0F))
+        TableLayoutPanel14.Controls.Add(Panel6, 0, 2)
+        TableLayoutPanel14.Controls.Add(Panel4, 0, 0)
+        TableLayoutPanel14.Controls.Add(lbDesripcionUltimoUso, 0, 1)
+        TableLayoutPanel14.Location = New Point(32, 886)
+        TableLayoutPanel14.Margin = New Padding(3, 4, 3, 4)
         TableLayoutPanel14.Name = "TableLayoutPanel14"
-        TableLayoutPanel14.RowCount = 2
-        TableLayoutPanel14.RowStyles.Add(New RowStyle(SizeType.Percent, 50F))
-        TableLayoutPanel14.RowStyles.Add(New RowStyle(SizeType.Percent, 50F))
-        TableLayoutPanel14.Size = New Size(362, 209)
+        TableLayoutPanel14.RowCount = 3
+        TableLayoutPanel14.RowStyles.Add(New RowStyle(SizeType.Percent, 4.476737F))
+        TableLayoutPanel14.RowStyles.Add(New RowStyle(SizeType.Percent, 92.05226F))
+        TableLayoutPanel14.RowStyles.Add(New RowStyle(SizeType.Percent, 3.471002F))
+        TableLayoutPanel14.Size = New Size(414, 278)
         TableLayoutPanel14.TabIndex = 6
+        ' 
+        ' Panel6
+        ' 
+        Panel6.BackColor = Color.Silver
+        Panel6.Dock = DockStyle.Fill
+        Panel6.Location = New Point(3, 271)
+        Panel6.Margin = New Padding(3, 4, 3, 4)
+        Panel6.Name = "Panel6"
+        Panel6.Size = New Size(408, 3)
+        Panel6.TabIndex = 4
+        ' 
+        ' Panel4
+        ' 
+        Panel4.BackColor = Color.Black
+        Panel4.Controls.Add(Panel5)
+        Panel4.Dock = DockStyle.Fill
+        Panel4.Location = New Point(3, 4)
+        Panel4.Margin = New Padding(3, 4, 3, 4)
+        Panel4.Name = "Panel4"
+        Panel4.Size = New Size(408, 4)
+        Panel4.TabIndex = 3
+        ' 
+        ' Panel5
+        ' 
+        Panel5.BackColor = Color.Silver
+        Panel5.Dock = DockStyle.Fill
+        Panel5.Location = New Point(0, 0)
+        Panel5.Margin = New Padding(3, 4, 3, 4)
+        Panel5.Name = "Panel5"
+        Panel5.Size = New Size(408, 4)
+        Panel5.TabIndex = 3
         ' 
         ' lbDesripcionUltimoUso
         ' 
         lbDesripcionUltimoUso.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         lbDesripcionUltimoUso.AutoSize = True
-        lbDesripcionUltimoUso.Font = New Font("Arial", 15F)
-        lbDesripcionUltimoUso.Location = New Point(3, 0)
+        lbDesripcionUltimoUso.Font = New Font("Arial", 15.0F)
+        lbDesripcionUltimoUso.Location = New Point(3, 12)
         lbDesripcionUltimoUso.Name = "lbDesripcionUltimoUso"
-        TableLayoutPanel14.SetRowSpan(lbDesripcionUltimoUso, 2)
-        lbDesripcionUltimoUso.Size = New Size(356, 209)
+        lbDesripcionUltimoUso.Size = New Size(408, 255)
         lbDesripcionUltimoUso.TabIndex = 2
         lbDesripcionUltimoUso.Text = resources.GetString("lbDesripcionUltimoUso.Text")
         lbDesripcionUltimoUso.TextAlign = ContentAlignment.MiddleLeft
@@ -1171,9 +1259,10 @@ Partial Class Material
         Panelr14.BackColor = SystemColors.ButtonFace
         TableLayoutPanel11.SetColumnSpan(Panelr14, 2)
         Panelr14.Controls.Add(btnAsignar)
-        Panelr14.Location = New Point(28, 950)
+        Panelr14.Location = New Point(32, 1267)
+        Panelr14.Margin = New Padding(3, 4, 3, 4)
         Panelr14.Name = "Panelr14"
-        Panelr14.Size = New Size(362, 65)
+        Panelr14.Size = New Size(414, 87)
         Panelr14.TabIndex = 9
         ' 
         ' btnAsignar
@@ -1182,11 +1271,12 @@ Partial Class Material
         btnAsignar.BackColor = Color.FromArgb(CByte(96), CByte(62), CByte(136))
         btnAsignar.FlatAppearance.BorderSize = 0
         btnAsignar.FlatStyle = FlatStyle.Flat
-        btnAsignar.Font = New Font("Segoe UI Semibold", 16F, FontStyle.Bold)
+        btnAsignar.Font = New Font("Segoe UI Semibold", 16.0F, FontStyle.Bold)
         btnAsignar.ForeColor = Color.White
-        btnAsignar.Location = New Point(2, 2)
+        btnAsignar.Location = New Point(2, 3)
+        btnAsignar.Margin = New Padding(3, 4, 3, 4)
         btnAsignar.Name = "btnAsignar"
-        btnAsignar.Size = New Size(356, 59)
+        btnAsignar.Size = New Size(407, 79)
         btnAsignar.TabIndex = 0
         btnAsignar.Text = "Asignar a trabajo"
         btnAsignar.UseVisualStyleBackColor = False
@@ -1197,9 +1287,10 @@ Partial Class Material
         Panelr16.BackColor = SystemColors.ButtonFace
         TableLayoutPanel11.SetColumnSpan(Panelr16, 2)
         Panelr16.Controls.Add(btnAgregarDerecho)
-        Panelr16.Location = New Point(28, 879)
+        Panelr16.Location = New Point(32, 1172)
+        Panelr16.Margin = New Padding(3, 4, 3, 4)
         Panelr16.Name = "Panelr16"
-        Panelr16.Size = New Size(362, 65)
+        Panelr16.Size = New Size(414, 87)
         Panelr16.TabIndex = 10
         ' 
         ' btnAgregarDerecho
@@ -1208,22 +1299,24 @@ Partial Class Material
         btnAgregarDerecho.BackColor = Color.Purple
         btnAgregarDerecho.FlatAppearance.BorderSize = 0
         btnAgregarDerecho.FlatStyle = FlatStyle.Flat
-        btnAgregarDerecho.Font = New Font("Segoe UI Semibold", 16F, FontStyle.Bold)
+        btnAgregarDerecho.Font = New Font("Segoe UI Semibold", 16.0F, FontStyle.Bold)
         btnAgregarDerecho.ForeColor = Color.White
-        btnAgregarDerecho.Location = New Point(2, 2)
+        btnAgregarDerecho.Location = New Point(2, 3)
+        btnAgregarDerecho.Margin = New Padding(3, 4, 3, 4)
         btnAgregarDerecho.Name = "btnAgregarDerecho"
-        btnAgregarDerecho.Size = New Size(356, 59)
+        btnAgregarDerecho.Size = New Size(407, 79)
         btnAgregarDerecho.TabIndex = 0
         btnAgregarDerecho.Text = "Agregar material"
         btnAgregarDerecho.UseVisualStyleBackColor = False
         ' 
         ' Material
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
         AutoScaleMode = AutoScaleMode.Font
         Controls.Add(TableLayoutPanel1)
+        Margin = New Padding(3, 4, 3, 4)
         Name = "Material"
-        Size = New Size(1720, 1080)
+        Size = New Size(1966, 1440)
         TableLayoutPanel1.ResumeLayout(False)
         panelPrincipal.ResumeLayout(False)
         Panelr6.ResumeLayout(False)
@@ -1283,6 +1376,7 @@ Partial Class Material
         TableLayoutPanel13.PerformLayout()
         TableLayoutPanel14.ResumeLayout(False)
         TableLayoutPanel14.PerformLayout()
+        Panel4.ResumeLayout(False)
         Panelr14.ResumeLayout(False)
         Panelr16.ResumeLayout(False)
         ResumeLayout(False)
@@ -1368,5 +1462,9 @@ Partial Class Material
     Friend WithEvents pEditar As PanelR
     Friend WithEvents lbEditar As Label
     Friend WithEvents pcbEditar As PictureBox
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents Panel4 As Panel
+    Friend WithEvents Panel6 As Panel
+    Friend WithEvents Panel5 As Panel
 
 End Class

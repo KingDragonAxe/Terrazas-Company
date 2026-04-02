@@ -5,7 +5,6 @@ Public Class Usuario
     Dim ver As Boolean
     Private Sub Usuario_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ver = False
-        Bordes(pbFoto, 10)
         tampan = PSombraSeguridad.Width
         btnActualizar.MinimumSize = New Size(20, 20)
         btnFoto.Size = New Size(btnFoto.Width, btnFoto.Width)
@@ -22,6 +21,7 @@ Public Class Usuario
     Private Sub Usuario_Resize(sender As Object, e As EventArgs) Handles MyBase.Resize
         Bordes(btnEstadistica, 10)
         Bordes(btnCambiarCuenta, 10)
+        Bordes(pbFoto, 10)
         TamTexto(lbSeguridad, "Segoe UI", 20, FontStyle.Bold, tampan, PSombraSeguridad)
         TamTexto(lbCorreo, "Segoe UI", 20, FontStyle.Regular, tampan, PSombraSeguridad)
         TamTexto(lbPss, "Segoe UI", 20, FontStyle.Regular, tampan, PSombraSeguridad)
@@ -171,5 +171,12 @@ Public Class Usuario
         btnSave.Visible = False
         btnHide.Visible = False
         btnSee.Enabled = True
+    End Sub
+
+    Private Sub btnCambiarCuenta_Click(sender As Object, e As EventArgs) Handles btnCambiarCuenta.Click
+        Dim inicio As Inicio = Me.FindForm
+        inicio.Close()
+        Dim pantalla As New Carga()
+        pantalla.Show()
     End Sub
 End Class

@@ -223,7 +223,7 @@ Partial Class Loggin
         cbVer.AutoSize = True
         cbVer.Font = New Font("Segoe UI", 14F)
         cbVer.ForeColor = Color.FromArgb(CByte(51), CByte(51), CByte(51))
-        cbVer.Location = New Point(253, 613)
+        cbVer.Location = New Point(253, 587)
         cbVer.Margin = New Padding(3, 2, 3, 2)
         cbVer.Name = "cbVer"
         cbVer.Size = New Size(157, 29)
@@ -289,8 +289,9 @@ Partial Class Loggin
         ' 
         ' PictureBox1
         ' 
+        PictureBox1.Dock = DockStyle.Right
         PictureBox1.Image = My.Resources.Resources.OriginalFondoTorres_1_
-        PictureBox1.Location = New Point(961, 0)
+        PictureBox1.Location = New Point(960, 0)
         PictureBox1.Margin = New Padding(3, 2, 3, 2)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(944, 1041)

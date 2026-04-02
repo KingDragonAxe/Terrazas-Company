@@ -108,4 +108,5 @@
         confirmar.pantalla = segunda
         confirmar.ShowDialog()
     End Sub
+
 End Class
