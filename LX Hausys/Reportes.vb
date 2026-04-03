@@ -1,3 +1,4 @@
-﻿Public Class Reportes
+﻿
+Public Class Reportes
 
 End Class

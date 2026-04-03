@@ -45,6 +45,7 @@ Partial Class Loggin
         PanelIzq = New Panel()
         Panelr4 = New PanelR()
         PictureBox1 = New PictureBox()
+        TableLayoutPanel1 = New TableLayoutPanel()
         CType(pcbUsuario, ComponentModel.ISupportInitialize).BeginInit()
         Panel1.SuspendLayout()
         PanelInicio.SuspendLayout()
@@ -57,6 +58,7 @@ Partial Class Loggin
         PanelIzq.SuspendLayout()
         Panelr4.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
+        TableLayoutPanel1.SuspendLayout()
         SuspendLayout()
         ' 
         ' pcbUsuario
@@ -75,7 +77,7 @@ Partial Class Loggin
         ' 
         ' Panel1
         ' 
-        Panel1.Anchor = AnchorStyles.None
+        Panel1.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         Panel1.BackColor = Color.FromArgb(CByte(96), CByte(62), CByte(136))
         Panel1.Controls.Add(PanelInicio)
         Panel1.Controls.Add(lbIniciar)
@@ -86,6 +88,7 @@ Partial Class Loggin
         ' 
         ' PanelInicio
         ' 
+        PanelInicio.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         PanelInicio.BackColor = Color.White
         PanelInicio.BackgroundImageLayout = ImageLayout.Stretch
         PanelInicio.Controls.Add(Panelr2)
@@ -271,10 +274,11 @@ Partial Class Loggin
         ' 
         PanelIzq.BackColor = Color.WhiteSmoke
         PanelIzq.Controls.Add(Panelr4)
-        PanelIzq.Dock = DockStyle.Left
+        PanelIzq.Dock = DockStyle.Fill
         PanelIzq.Location = New Point(0, 0)
+        PanelIzq.Margin = New Padding(0)
         PanelIzq.Name = "PanelIzq"
-        PanelIzq.Size = New Size(960, 1041)
+        PanelIzq.Size = New Size(842, 1041)
         PanelIzq.TabIndex = 2
         ' 
         ' Panelr4
@@ -282,22 +286,37 @@ Partial Class Loggin
         Panelr4.Anchor = AnchorStyles.None
         Panelr4.BackColor = SystemColors.ButtonFace
         Panelr4.Controls.Add(Panel1)
-        Panelr4.Location = New Point(156, 118)
+        Panelr4.Location = New Point(97, 117)
         Panelr4.Name = "Panelr4"
         Panelr4.Size = New Size(658, 821)
         Panelr4.TabIndex = 13
         ' 
         ' PictureBox1
         ' 
-        PictureBox1.Dock = DockStyle.Right
+        PictureBox1.Dock = DockStyle.Fill
         PictureBox1.Image = My.Resources.Resources.OriginalFondoTorres_1_
-        PictureBox1.Location = New Point(960, 0)
-        PictureBox1.Margin = New Padding(3, 2, 3, 2)
+        PictureBox1.Location = New Point(842, 0)
+        PictureBox1.Margin = New Padding(0)
         PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(944, 1041)
+        PictureBox1.Size = New Size(842, 1041)
         PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox1.TabIndex = 13
         PictureBox1.TabStop = False
+        ' 
+        ' TableLayoutPanel1
+        ' 
+        TableLayoutPanel1.ColumnCount = 2
+        TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50F))
+        TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50F))
+        TableLayoutPanel1.Controls.Add(PanelIzq, 0, 0)
+        TableLayoutPanel1.Controls.Add(PictureBox1, 1, 0)
+        TableLayoutPanel1.Dock = DockStyle.Fill
+        TableLayoutPanel1.Location = New Point(0, 0)
+        TableLayoutPanel1.Name = "TableLayoutPanel1"
+        TableLayoutPanel1.RowCount = 1
+        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 100F))
+        TableLayoutPanel1.Size = New Size(1684, 1041)
+        TableLayoutPanel1.TabIndex = 14
         ' 
         ' Loggin
         ' 
@@ -305,9 +324,8 @@ Partial Class Loggin
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.WhiteSmoke
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(1904, 1041)
-        Controls.Add(PictureBox1)
-        Controls.Add(PanelIzq)
+        ClientSize = New Size(1684, 1041)
+        Controls.Add(TableLayoutPanel1)
         DoubleBuffered = True
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Margin = New Padding(3, 2, 3, 2)
@@ -331,6 +349,7 @@ Partial Class Loggin
         PanelIzq.ResumeLayout(False)
         Panelr4.ResumeLayout(False)
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
+        TableLayoutPanel1.ResumeLayout(False)
         ResumeLayout(False)
     End Sub
     Friend WithEvents pcbUsuario As PictureBox
@@ -355,4 +374,5 @@ Partial Class Loggin
     Friend WithEvents Panelr1 As PanelR
     Friend WithEvents Panelr2 As PanelR
     Friend WithEvents Panelr4 As PanelR
+    Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
 End Class

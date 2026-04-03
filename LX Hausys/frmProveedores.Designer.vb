@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmMaterial
+Partial Class frmProveedores
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -23,45 +23,39 @@ Partial Class frmMaterial
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Panelr2 = New PanelR()
-        btnImagen = New Button()
-        Panelr16 = New PanelR()
-        Panelr17 = New PanelR()
-        cmbEstado = New ComboBox()
-        PictureBox8 = New PictureBox()
-        Label11 = New Label()
+        Panelr19 = New PanelR()
         Panelr20 = New PanelR()
-        Panelr21 = New PanelR()
+        cmbRS = New ComboBox()
         PictureBox9 = New PictureBox()
+        Label12 = New Label()
+        Panelr21 = New PanelR()
+        Panelr22 = New PanelR()
+        txtTelefono = New TextBox()
         PictureBox10 = New PictureBox()
         Label13 = New Label()
+        Panelr16 = New PanelR()
+        Panelr17 = New PanelR()
+        txtNombre = New TextBox()
+        PictureBox8 = New PictureBox()
+        Label11 = New Label()
         Panelr10 = New PanelR()
         Panelr11 = New PanelR()
-        dtpFechaRegistro = New DateTimePicker()
+        cmbEstado = New ComboBox()
         PictureBox5 = New PictureBox()
         Label8 = New Label()
-        Panelr12 = New PanelR()
-        Panelr13 = New PanelR()
-        txtTelefono = New TextBox()
-        PictureBox6 = New PictureBox()
-        Label9 = New Label()
-        Panelr14 = New PanelR()
-        Panelr15 = New PanelR()
-        cmbUnidadMedida = New ComboBox()
-        PictureBox7 = New PictureBox()
-        Label10 = New Label()
         Panelr8 = New PanelR()
         Panelr9 = New PanelR()
-        txtCantidad = New TextBox()
+        txtRFC = New TextBox()
         PictureBox4 = New PictureBox()
         Label7 = New Label()
         Panelr6 = New PanelR()
         Panelr7 = New PanelR()
-        txtMarca = New TextBox()
+        txtDireccio = New TextBox()
         PictureBox3 = New PictureBox()
         Label6 = New Label()
         Panelr5 = New PanelR()
         Panelr4 = New PanelR()
-        cmbTipo = New ComboBox()
+        txtCorreo = New TextBox()
         PictureBox2 = New PictureBox()
         Label5 = New Label()
         lbID = New Label()
@@ -76,22 +70,18 @@ Partial Class frmMaterial
         btnAceptar = New Button()
         Label1 = New Label()
         Panelr2.SuspendLayout()
+        Panelr19.SuspendLayout()
+        Panelr20.SuspendLayout()
+        CType(PictureBox9, ComponentModel.ISupportInitialize).BeginInit()
+        Panelr21.SuspendLayout()
+        Panelr22.SuspendLayout()
+        CType(PictureBox10, ComponentModel.ISupportInitialize).BeginInit()
         Panelr16.SuspendLayout()
         Panelr17.SuspendLayout()
         CType(PictureBox8, ComponentModel.ISupportInitialize).BeginInit()
-        Panelr20.SuspendLayout()
-        Panelr21.SuspendLayout()
-        CType(PictureBox9, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox10, ComponentModel.ISupportInitialize).BeginInit()
         Panelr10.SuspendLayout()
         Panelr11.SuspendLayout()
         CType(PictureBox5, ComponentModel.ISupportInitialize).BeginInit()
-        Panelr12.SuspendLayout()
-        Panelr13.SuspendLayout()
-        CType(PictureBox6, ComponentModel.ISupportInitialize).BeginInit()
-        Panelr14.SuspendLayout()
-        Panelr15.SuspendLayout()
-        CType(PictureBox7, ComponentModel.ISupportInitialize).BeginInit()
         Panelr8.SuspendLayout()
         Panelr9.SuspendLayout()
         CType(PictureBox4, ComponentModel.ISupportInitialize).BeginInit()
@@ -111,22 +101,18 @@ Partial Class frmMaterial
         ' 
         Panelr2.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         Panelr2.BackColor = Color.White
-        Panelr2.Controls.Add(btnImagen)
+        Panelr2.Controls.Add(Panelr19)
+        Panelr2.Controls.Add(PictureBox9)
+        Panelr2.Controls.Add(Label12)
+        Panelr2.Controls.Add(Panelr21)
+        Panelr2.Controls.Add(PictureBox10)
+        Panelr2.Controls.Add(Label13)
         Panelr2.Controls.Add(Panelr16)
         Panelr2.Controls.Add(PictureBox8)
         Panelr2.Controls.Add(Label11)
-        Panelr2.Controls.Add(Panelr20)
-        Panelr2.Controls.Add(PictureBox10)
-        Panelr2.Controls.Add(Label13)
         Panelr2.Controls.Add(Panelr10)
         Panelr2.Controls.Add(PictureBox5)
         Panelr2.Controls.Add(Label8)
-        Panelr2.Controls.Add(Panelr12)
-        Panelr2.Controls.Add(PictureBox6)
-        Panelr2.Controls.Add(Label9)
-        Panelr2.Controls.Add(Panelr14)
-        Panelr2.Controls.Add(PictureBox7)
-        Panelr2.Controls.Add(Label10)
         Panelr2.Controls.Add(Panelr8)
         Panelr2.Controls.Add(PictureBox4)
         Panelr2.Controls.Add(Label7)
@@ -146,179 +132,74 @@ Partial Class frmMaterial
         Panelr2.Location = New Point(-1, -6)
         Panelr2.Name = "Panelr2"
         Panelr2.Size = New Size(802, 504)
-        Panelr2.TabIndex = 2
+        Panelr2.TabIndex = 4
         ' 
-        ' btnImagen
+        ' Panelr19
         ' 
-        btnImagen.Location = New Point(139, 166)
-        btnImagen.Name = "btnImagen"
-        btnImagen.Size = New Size(100, 23)
-        btnImagen.TabIndex = 36
-        btnImagen.Text = "Cambiar foto"
-        btnImagen.UseVisualStyleBackColor = True
-        ' 
-        ' Panelr16
-        ' 
-        Panelr16.BackColor = SystemColors.ButtonFace
-        Panelr16.Controls.Add(Panelr17)
-        Panelr16.Location = New Point(298, 190)
-        Panelr16.Name = "Panelr16"
-        Panelr16.Size = New Size(206, 44)
-        Panelr16.TabIndex = 35
-        ' 
-        ' Panelr17
-        ' 
-        Panelr17.BackColor = Color.FromArgb(CByte(250), CByte(250), CByte(250))
-        Panelr17.Controls.Add(cmbEstado)
-        Panelr17.Location = New Point(2, 2)
-        Panelr17.Name = "Panelr17"
-        Panelr17.Size = New Size(200, 38)
-        Panelr17.TabIndex = 8
-        ' 
-        ' cmbEstado
-        ' 
-        cmbEstado.FlatStyle = FlatStyle.Flat
-        cmbEstado.Font = New Font("Segoe UI", 14F)
-        cmbEstado.FormattingEnabled = True
-        cmbEstado.Location = New Point(4, 3)
-        cmbEstado.Name = "cmbEstado"
-        cmbEstado.Size = New Size(198, 33)
-        cmbEstado.TabIndex = 0
-        ' 
-        ' PictureBox8
-        ' 
-        PictureBox8.Image = My.Resources.Resources.parcel
-        PictureBox8.Location = New Point(298, 159)
-        PictureBox8.Name = "PictureBox8"
-        PictureBox8.Size = New Size(25, 25)
-        PictureBox8.SizeMode = PictureBoxSizeMode.StretchImage
-        PictureBox8.TabIndex = 34
-        PictureBox8.TabStop = False
-        ' 
-        ' Label11
-        ' 
-        Label11.AutoSize = True
-        Label11.Font = New Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label11.ForeColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
-        Label11.Location = New Point(324, 166)
-        Label11.Name = "Label11"
-        Label11.Size = New Size(89, 18)
-        Label11.TabIndex = 33
-        Label11.Text = "Proveedor: "
+        Panelr19.BackColor = SystemColors.ButtonFace
+        Panelr19.Controls.Add(Panelr20)
+        Panelr19.Location = New Point(298, 190)
+        Panelr19.Name = "Panelr19"
+        Panelr19.Size = New Size(206, 44)
+        Panelr19.TabIndex = 41
         ' 
         ' Panelr20
         ' 
-        Panelr20.BackColor = SystemColors.ButtonFace
-        Panelr20.Controls.Add(Panelr21)
-        Panelr20.Location = New Point(40, 190)
+        Panelr20.BackColor = Color.FromArgb(CByte(250), CByte(250), CByte(250))
+        Panelr20.Controls.Add(cmbRS)
+        Panelr20.Location = New Point(2, 2)
         Panelr20.Name = "Panelr20"
-        Panelr20.Size = New Size(206, 134)
-        Panelr20.TabIndex = 29
+        Panelr20.Size = New Size(200, 38)
+        Panelr20.TabIndex = 8
         ' 
-        ' Panelr21
+        ' cmbRS
         ' 
-        Panelr21.BackColor = Color.FromArgb(CByte(250), CByte(250), CByte(250))
-        Panelr21.Controls.Add(PictureBox9)
-        Panelr21.Location = New Point(2, 2)
-        Panelr21.Name = "Panelr21"
-        Panelr21.Size = New Size(200, 128)
-        Panelr21.TabIndex = 8
+        cmbRS.FlatStyle = FlatStyle.Flat
+        cmbRS.Font = New Font("Segoe UI", 14F)
+        cmbRS.FormattingEnabled = True
+        cmbRS.Location = New Point(4, 3)
+        cmbRS.Name = "cmbRS"
+        cmbRS.Size = New Size(198, 33)
+        cmbRS.TabIndex = 0
         ' 
         ' PictureBox9
         ' 
-        PictureBox9.Location = New Point(0, 0)
+        PictureBox9.Image = My.Resources.Resources.tipo
+        PictureBox9.Location = New Point(298, 159)
         PictureBox9.Name = "PictureBox9"
-        PictureBox9.Size = New Size(200, 128)
-        PictureBox9.TabIndex = 36
+        PictureBox9.Size = New Size(25, 25)
+        PictureBox9.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox9.TabIndex = 40
         PictureBox9.TabStop = False
         ' 
-        ' PictureBox10
+        ' Label12
         ' 
-        PictureBox10.Image = My.Resources.Resources.image_
-        PictureBox10.Location = New Point(40, 162)
-        PictureBox10.Name = "PictureBox10"
-        PictureBox10.Size = New Size(22, 22)
-        PictureBox10.SizeMode = PictureBoxSizeMode.StretchImage
-        PictureBox10.TabIndex = 28
-        PictureBox10.TabStop = False
+        Label12.AutoSize = True
+        Label12.Font = New Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label12.ForeColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
+        Label12.Location = New Point(324, 166)
+        Label12.Name = "Label12"
+        Label12.Size = New Size(108, 18)
+        Label12.TabIndex = 39
+        Label12.Text = "Razon Social: "
         ' 
-        ' Label13
+        ' Panelr21
         ' 
-        Label13.AutoSize = True
-        Label13.Font = New Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label13.ForeColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
-        Label13.Location = New Point(66, 166)
-        Label13.Name = "Label13"
-        Label13.Size = New Size(63, 18)
-        Label13.TabIndex = 27
-        Label13.Text = "Imagen:"
+        Panelr21.BackColor = SystemColors.ButtonFace
+        Panelr21.Controls.Add(Panelr22)
+        Panelr21.Location = New Point(40, 280)
+        Panelr21.Name = "Panelr21"
+        Panelr21.Size = New Size(206, 44)
+        Panelr21.TabIndex = 38
         ' 
-        ' Panelr10
+        ' Panelr22
         ' 
-        Panelr10.BackColor = SystemColors.ButtonFace
-        Panelr10.Controls.Add(Panelr11)
-        Panelr10.Location = New Point(554, 370)
-        Panelr10.Name = "Panelr10"
-        Panelr10.Size = New Size(206, 44)
-        Panelr10.TabIndex = 26
-        ' 
-        ' Panelr11
-        ' 
-        Panelr11.BackColor = Color.FromArgb(CByte(250), CByte(250), CByte(250))
-        Panelr11.Controls.Add(dtpFechaRegistro)
-        Panelr11.Location = New Point(2, 2)
-        Panelr11.Name = "Panelr11"
-        Panelr11.Size = New Size(200, 38)
-        Panelr11.TabIndex = 8
-        ' 
-        ' dtpFechaRegistro
-        ' 
-        dtpFechaRegistro.Font = New Font("Segoe UI", 14F)
-        dtpFechaRegistro.Format = DateTimePickerFormat.Short
-        dtpFechaRegistro.Location = New Point(-2, 3)
-        dtpFechaRegistro.Name = "dtpFechaRegistro"
-        dtpFechaRegistro.RightToLeft = RightToLeft.No
-        dtpFechaRegistro.Size = New Size(206, 32)
-        dtpFechaRegistro.TabIndex = 0
-        ' 
-        ' PictureBox5
-        ' 
-        PictureBox5.Image = My.Resources.Resources.calendar
-        PictureBox5.Location = New Point(554, 342)
-        PictureBox5.Name = "PictureBox5"
-        PictureBox5.Size = New Size(22, 22)
-        PictureBox5.SizeMode = PictureBoxSizeMode.StretchImage
-        PictureBox5.TabIndex = 25
-        PictureBox5.TabStop = False
-        ' 
-        ' Label8
-        ' 
-        Label8.AutoSize = True
-        Label8.Font = New Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label8.ForeColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
-        Label8.Location = New Point(580, 346)
-        Label8.Name = "Label8"
-        Label8.Size = New Size(139, 18)
-        Label8.TabIndex = 24
-        Label8.Text = "Fecha de registro: "
-        ' 
-        ' Panelr12
-        ' 
-        Panelr12.BackColor = SystemColors.ButtonFace
-        Panelr12.Controls.Add(Panelr13)
-        Panelr12.Location = New Point(298, 370)
-        Panelr12.Name = "Panelr12"
-        Panelr12.Size = New Size(206, 44)
-        Panelr12.TabIndex = 23
-        ' 
-        ' Panelr13
-        ' 
-        Panelr13.BackColor = Color.FromArgb(CByte(250), CByte(250), CByte(250))
-        Panelr13.Controls.Add(txtTelefono)
-        Panelr13.Location = New Point(2, 2)
-        Panelr13.Name = "Panelr13"
-        Panelr13.Size = New Size(200, 38)
-        Panelr13.TabIndex = 8
+        Panelr22.BackColor = Color.FromArgb(CByte(250), CByte(250), CByte(250))
+        Panelr22.Controls.Add(txtTelefono)
+        Panelr22.Location = New Point(2, 2)
+        Panelr22.Name = "Panelr22"
+        Panelr22.Size = New Size(200, 38)
+        Panelr22.TabIndex = 8
         ' 
         ' txtTelefono
         ' 
@@ -330,75 +211,124 @@ Partial Class frmMaterial
         txtTelefono.Size = New Size(194, 26)
         txtTelefono.TabIndex = 9
         ' 
-        ' PictureBox6
+        ' PictureBox10
         ' 
-        PictureBox6.Image = My.Resources.Resources.dollar
-        PictureBox6.Location = New Point(298, 344)
-        PictureBox6.Name = "PictureBox6"
-        PictureBox6.Size = New Size(20, 20)
-        PictureBox6.SizeMode = PictureBoxSizeMode.StretchImage
-        PictureBox6.TabIndex = 22
-        PictureBox6.TabStop = False
+        PictureBox10.Image = My.Resources.Resources.telephone
+        PictureBox10.Location = New Point(40, 252)
+        PictureBox10.Name = "PictureBox10"
+        PictureBox10.Size = New Size(22, 22)
+        PictureBox10.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox10.TabIndex = 37
+        PictureBox10.TabStop = False
         ' 
-        ' Label9
+        ' Label13
         ' 
-        Label9.AutoSize = True
-        Label9.Font = New Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label9.ForeColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
-        Label9.Location = New Point(324, 346)
-        Label9.Name = "Label9"
-        Label9.Size = New Size(145, 18)
-        Label9.TabIndex = 21
-        Label9.Text = "Precio de Compra: "
+        Label13.AutoSize = True
+        Label13.Font = New Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label13.ForeColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
+        Label13.Location = New Point(66, 256)
+        Label13.Name = "Label13"
+        Label13.Size = New Size(74, 18)
+        Label13.TabIndex = 36
+        Label13.Text = "Telefono: "
         ' 
-        ' Panelr14
+        ' Panelr16
         ' 
-        Panelr14.BackColor = SystemColors.ButtonFace
-        Panelr14.Controls.Add(Panelr15)
-        Panelr14.Location = New Point(40, 370)
-        Panelr14.Name = "Panelr14"
-        Panelr14.Size = New Size(206, 44)
-        Panelr14.TabIndex = 20
+        Panelr16.BackColor = SystemColors.ButtonFace
+        Panelr16.Controls.Add(Panelr17)
+        Panelr16.Location = New Point(40, 190)
+        Panelr16.Name = "Panelr16"
+        Panelr16.Size = New Size(206, 44)
+        Panelr16.TabIndex = 35
         ' 
-        ' Panelr15
+        ' Panelr17
         ' 
-        Panelr15.BackColor = Color.FromArgb(CByte(250), CByte(250), CByte(250))
-        Panelr15.Controls.Add(cmbUnidadMedida)
-        Panelr15.Location = New Point(2, 2)
-        Panelr15.Name = "Panelr15"
-        Panelr15.Size = New Size(200, 38)
-        Panelr15.TabIndex = 8
+        Panelr17.BackColor = Color.FromArgb(CByte(250), CByte(250), CByte(250))
+        Panelr17.Controls.Add(txtNombre)
+        Panelr17.Location = New Point(2, 2)
+        Panelr17.Name = "Panelr17"
+        Panelr17.Size = New Size(200, 38)
+        Panelr17.TabIndex = 8
         ' 
-        ' cmbUnidadMedida
+        ' txtNombre
         ' 
-        cmbUnidadMedida.FlatStyle = FlatStyle.Flat
-        cmbUnidadMedida.Font = New Font("Segoe UI", 14F)
-        cmbUnidadMedida.FormattingEnabled = True
-        cmbUnidadMedida.Location = New Point(1, 3)
-        cmbUnidadMedida.Name = "cmbUnidadMedida"
-        cmbUnidadMedida.Size = New Size(198, 33)
-        cmbUnidadMedida.TabIndex = 2
+        txtNombre.BackColor = Color.FromArgb(CByte(250), CByte(250), CByte(250))
+        txtNombre.BorderStyle = BorderStyle.None
+        txtNombre.Font = New Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        txtNombre.Location = New Point(3, 6)
+        txtNombre.Name = "txtNombre"
+        txtNombre.Size = New Size(194, 26)
+        txtNombre.TabIndex = 10
         ' 
-        ' PictureBox7
+        ' PictureBox8
         ' 
-        PictureBox7.Image = My.Resources.Resources.ruler
-        PictureBox7.Location = New Point(40, 342)
-        PictureBox7.Name = "PictureBox7"
-        PictureBox7.Size = New Size(22, 22)
-        PictureBox7.SizeMode = PictureBoxSizeMode.StretchImage
-        PictureBox7.TabIndex = 19
-        PictureBox7.TabStop = False
+        PictureBox8.Image = My.Resources.Resources.parcel
+        PictureBox8.Location = New Point(40, 159)
+        PictureBox8.Name = "PictureBox8"
+        PictureBox8.Size = New Size(25, 25)
+        PictureBox8.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox8.TabIndex = 34
+        PictureBox8.TabStop = False
         ' 
-        ' Label10
+        ' Label11
         ' 
-        Label10.AutoSize = True
-        Label10.Font = New Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label10.ForeColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
-        Label10.Location = New Point(66, 346)
-        Label10.Name = "Label10"
-        Label10.Size = New Size(145, 18)
-        Label10.TabIndex = 18
-        Label10.Text = "Unidad de medida: "
+        Label11.AutoSize = True
+        Label11.Font = New Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label11.ForeColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
+        Label11.Location = New Point(66, 166)
+        Label11.Name = "Label11"
+        Label11.Size = New Size(72, 18)
+        Label11.TabIndex = 33
+        Label11.Text = "Nombre: "
+        ' 
+        ' Panelr10
+        ' 
+        Panelr10.BackColor = SystemColors.ButtonFace
+        Panelr10.Controls.Add(Panelr11)
+        Panelr10.Location = New Point(554, 280)
+        Panelr10.Name = "Panelr10"
+        Panelr10.Size = New Size(206, 44)
+        Panelr10.TabIndex = 26
+        ' 
+        ' Panelr11
+        ' 
+        Panelr11.BackColor = Color.FromArgb(CByte(250), CByte(250), CByte(250))
+        Panelr11.Controls.Add(cmbEstado)
+        Panelr11.Location = New Point(2, 2)
+        Panelr11.Name = "Panelr11"
+        Panelr11.Size = New Size(200, 38)
+        Panelr11.TabIndex = 8
+        ' 
+        ' cmbEstado
+        ' 
+        cmbEstado.FlatStyle = FlatStyle.Flat
+        cmbEstado.Font = New Font("Segoe UI", 14F)
+        cmbEstado.FormattingEnabled = True
+        cmbEstado.Location = New Point(1, 3)
+        cmbEstado.Name = "cmbEstado"
+        cmbEstado.Size = New Size(198, 33)
+        cmbEstado.TabIndex = 2
+        ' 
+        ' PictureBox5
+        ' 
+        PictureBox5.Image = My.Resources.Resources.circle
+        PictureBox5.Location = New Point(554, 252)
+        PictureBox5.Name = "PictureBox5"
+        PictureBox5.Size = New Size(22, 22)
+        PictureBox5.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox5.TabIndex = 25
+        PictureBox5.TabStop = False
+        ' 
+        ' Label8
+        ' 
+        Label8.AutoSize = True
+        Label8.Font = New Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label8.ForeColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
+        Label8.Location = New Point(580, 256)
+        Label8.Name = "Label8"
+        Label8.Size = New Size(66, 18)
+        Label8.TabIndex = 24
+        Label8.Text = "Estado: "
         ' 
         ' Panelr8
         ' 
@@ -412,25 +342,25 @@ Partial Class frmMaterial
         ' Panelr9
         ' 
         Panelr9.BackColor = Color.FromArgb(CByte(250), CByte(250), CByte(250))
-        Panelr9.Controls.Add(txtCantidad)
+        Panelr9.Controls.Add(txtRFC)
         Panelr9.Location = New Point(2, 2)
         Panelr9.Name = "Panelr9"
         Panelr9.Size = New Size(200, 38)
         Panelr9.TabIndex = 8
         ' 
-        ' txtCantidad
+        ' txtRFC
         ' 
-        txtCantidad.BackColor = Color.FromArgb(CByte(250), CByte(250), CByte(250))
-        txtCantidad.BorderStyle = BorderStyle.None
-        txtCantidad.Font = New Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        txtCantidad.Location = New Point(3, 6)
-        txtCantidad.Name = "txtCantidad"
-        txtCantidad.Size = New Size(194, 26)
-        txtCantidad.TabIndex = 9
+        txtRFC.BackColor = Color.FromArgb(CByte(250), CByte(250), CByte(250))
+        txtRFC.BorderStyle = BorderStyle.None
+        txtRFC.Font = New Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        txtRFC.Location = New Point(3, 6)
+        txtRFC.Name = "txtRFC"
+        txtRFC.Size = New Size(194, 26)
+        txtRFC.TabIndex = 9
         ' 
         ' PictureBox4
         ' 
-        PictureBox4.Image = My.Resources.Resources.tachometer
+        PictureBox4.Image = My.Resources.Resources.name
         PictureBox4.Location = New Point(554, 159)
         PictureBox4.Name = "PictureBox4"
         PictureBox4.Size = New Size(25, 25)
@@ -445,42 +375,44 @@ Partial Class frmMaterial
         Label7.ForeColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
         Label7.Location = New Point(580, 166)
         Label7.Name = "Label7"
-        Label7.Size = New Size(80, 18)
+        Label7.Size = New Size(49, 18)
         Label7.TabIndex = 15
-        Label7.Text = "Cantidad: "
+        Label7.Text = "RFC: "
         ' 
         ' Panelr6
         ' 
         Panelr6.BackColor = SystemColors.ButtonFace
         Panelr6.Controls.Add(Panelr7)
-        Panelr6.Location = New Point(298, 280)
+        Panelr6.Location = New Point(40, 370)
         Panelr6.Name = "Panelr6"
-        Panelr6.Size = New Size(206, 44)
+        Panelr6.Size = New Size(720, 54)
         Panelr6.TabIndex = 14
         ' 
         ' Panelr7
         ' 
+        Panelr7.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         Panelr7.BackColor = Color.FromArgb(CByte(250), CByte(250), CByte(250))
-        Panelr7.Controls.Add(txtMarca)
+        Panelr7.Controls.Add(txtDireccio)
         Panelr7.Location = New Point(2, 2)
         Panelr7.Name = "Panelr7"
-        Panelr7.Size = New Size(200, 38)
+        Panelr7.Size = New Size(714, 48)
         Panelr7.TabIndex = 8
         ' 
-        ' txtMarca
+        ' txtDireccio
         ' 
-        txtMarca.BackColor = Color.FromArgb(CByte(250), CByte(250), CByte(250))
-        txtMarca.BorderStyle = BorderStyle.None
-        txtMarca.Font = New Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        txtMarca.Location = New Point(3, 6)
-        txtMarca.Name = "txtMarca"
-        txtMarca.Size = New Size(194, 26)
-        txtMarca.TabIndex = 9
+        txtDireccio.BackColor = Color.FromArgb(CByte(250), CByte(250), CByte(250))
+        txtDireccio.BorderStyle = BorderStyle.None
+        txtDireccio.Font = New Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        txtDireccio.Location = New Point(3, 6)
+        txtDireccio.Multiline = True
+        txtDireccio.Name = "txtDireccio"
+        txtDireccio.Size = New Size(708, 39)
+        txtDireccio.TabIndex = 9
         ' 
         ' PictureBox3
         ' 
-        PictureBox3.Image = My.Resources.Resources.circle
-        PictureBox3.Location = New Point(298, 252)
+        PictureBox3.Image = My.Resources.Resources.location
+        PictureBox3.Location = New Point(40, 342)
         PictureBox3.Name = "PictureBox3"
         PictureBox3.Size = New Size(22, 22)
         PictureBox3.SizeMode = PictureBoxSizeMode.StretchImage
@@ -492,17 +424,17 @@ Partial Class frmMaterial
         Label6.AutoSize = True
         Label6.Font = New Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label6.ForeColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
-        Label6.Location = New Point(324, 256)
+        Label6.Location = New Point(66, 346)
         Label6.Name = "Label6"
-        Label6.Size = New Size(60, 18)
+        Label6.Size = New Size(79, 18)
         Label6.TabIndex = 12
-        Label6.Text = "Marca: "
+        Label6.Text = " Direccion"
         ' 
         ' Panelr5
         ' 
         Panelr5.BackColor = SystemColors.ButtonFace
         Panelr5.Controls.Add(Panelr4)
-        Panelr5.Location = New Point(554, 280)
+        Panelr5.Location = New Point(298, 280)
         Panelr5.Name = "Panelr5"
         Panelr5.Size = New Size(206, 44)
         Panelr5.TabIndex = 11
@@ -510,26 +442,26 @@ Partial Class frmMaterial
         ' Panelr4
         ' 
         Panelr4.BackColor = Color.FromArgb(CByte(250), CByte(250), CByte(250))
-        Panelr4.Controls.Add(cmbTipo)
+        Panelr4.Controls.Add(txtCorreo)
         Panelr4.Location = New Point(2, 2)
         Panelr4.Name = "Panelr4"
         Panelr4.Size = New Size(200, 38)
         Panelr4.TabIndex = 8
         ' 
-        ' cmbTipo
+        ' txtCorreo
         ' 
-        cmbTipo.FlatStyle = FlatStyle.Flat
-        cmbTipo.Font = New Font("Segoe UI", 14F)
-        cmbTipo.FormattingEnabled = True
-        cmbTipo.Location = New Point(3, 3)
-        cmbTipo.Name = "cmbTipo"
-        cmbTipo.Size = New Size(198, 33)
-        cmbTipo.TabIndex = 1
+        txtCorreo.BackColor = Color.FromArgb(CByte(250), CByte(250), CByte(250))
+        txtCorreo.BorderStyle = BorderStyle.None
+        txtCorreo.Font = New Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        txtCorreo.Location = New Point(3, 6)
+        txtCorreo.Name = "txtCorreo"
+        txtCorreo.Size = New Size(194, 26)
+        txtCorreo.TabIndex = 10
         ' 
         ' PictureBox2
         ' 
-        PictureBox2.Image = My.Resources.Resources.refresh
-        PictureBox2.Location = New Point(554, 254)
+        PictureBox2.Image = My.Resources.Resources.mail
+        PictureBox2.Location = New Point(298, 254)
         PictureBox2.Name = "PictureBox2"
         PictureBox2.Size = New Size(20, 20)
         PictureBox2.SizeMode = PictureBoxSizeMode.StretchImage
@@ -541,11 +473,11 @@ Partial Class frmMaterial
         Label5.AutoSize = True
         Label5.Font = New Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label5.ForeColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
-        Label5.Location = New Point(580, 256)
+        Label5.Location = New Point(324, 256)
         Label5.Name = "Label5"
-        Label5.Size = New Size(46, 18)
+        Label5.Size = New Size(65, 18)
         Label5.TabIndex = 7
-        Label5.Text = "Tipo: "
+        Label5.Text = "Correo: "
         ' 
         ' lbID
         ' 
@@ -586,16 +518,16 @@ Partial Class frmMaterial
         Label2.Font = New Font("Arial", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label2.Location = New Point(146, 55)
         Label2.Name = "Label2"
-        Label2.Size = New Size(327, 37)
+        Label2.Size = New Size(358, 37)
         Label2.TabIndex = 3
-        Label2.Text = "Registro de Material"
+        Label2.Text = "Registro de Proveedor"
         ' 
         ' PictureBox1
         ' 
-        PictureBox1.Image = My.Resources.Resources.membrane
-        PictureBox1.Location = New Point(40, 41)
+        PictureBox1.Image = My.Resources.Resources.market
+        PictureBox1.Location = New Point(38, 39)
         PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(100, 100)
+        PictureBox1.Size = New Size(105, 105)
         PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox1.TabIndex = 2
         PictureBox1.TabStop = False
@@ -657,18 +589,17 @@ Partial Class frmMaterial
         Label1.AutoSize = True
         Label1.Font = New Font("Century Gothic", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.White
-        Label1.Location = New Point(346, 496)
+        Label1.Location = New Point(329, 496)
         Label1.Name = "Label1"
-        Label1.Size = New Size(135, 36)
-        Label1.TabIndex = 3
-        Label1.Text = "Material"
+        Label1.Size = New Size(163, 36)
+        Label1.TabIndex = 5
+        Label1.Text = "Proveedor"
         ' 
-        ' frmMaterial
+        ' frmProveedores
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(96), CByte(62), CByte(136))
-        BackgroundImageLayout = ImageLayout.None
         ClientSize = New Size(800, 530)
         ControlBox = False
         Controls.Add(Panelr2)
@@ -679,30 +610,24 @@ Partial Class frmMaterial
         MdiChildrenMinimizedAnchorBottom = False
         MinimizeBox = False
         MinimumSize = New Size(816, 546)
-        Name = "frmMaterial"
+        Name = "frmProveedores"
         Opacity = 0.9R
-        ShowIcon = False
-        ShowInTaskbar = False
-        StartPosition = FormStartPosition.CenterScreen
         Panelr2.ResumeLayout(False)
         Panelr2.PerformLayout()
+        Panelr19.ResumeLayout(False)
+        Panelr20.ResumeLayout(False)
+        CType(PictureBox9, ComponentModel.ISupportInitialize).EndInit()
+        Panelr21.ResumeLayout(False)
+        Panelr22.ResumeLayout(False)
+        Panelr22.PerformLayout()
+        CType(PictureBox10, ComponentModel.ISupportInitialize).EndInit()
         Panelr16.ResumeLayout(False)
         Panelr17.ResumeLayout(False)
+        Panelr17.PerformLayout()
         CType(PictureBox8, ComponentModel.ISupportInitialize).EndInit()
-        Panelr20.ResumeLayout(False)
-        Panelr21.ResumeLayout(False)
-        CType(PictureBox9, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox10, ComponentModel.ISupportInitialize).EndInit()
         Panelr10.ResumeLayout(False)
         Panelr11.ResumeLayout(False)
         CType(PictureBox5, ComponentModel.ISupportInitialize).EndInit()
-        Panelr12.ResumeLayout(False)
-        Panelr13.ResumeLayout(False)
-        Panelr13.PerformLayout()
-        CType(PictureBox6, ComponentModel.ISupportInitialize).EndInit()
-        Panelr14.ResumeLayout(False)
-        Panelr15.ResumeLayout(False)
-        CType(PictureBox7, ComponentModel.ISupportInitialize).EndInit()
         Panelr8.ResumeLayout(False)
         Panelr9.ResumeLayout(False)
         Panelr9.PerformLayout()
@@ -713,6 +638,7 @@ Partial Class frmMaterial
         CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
         Panelr5.ResumeLayout(False)
         Panelr4.ResumeLayout(False)
+        Panelr4.PerformLayout()
         CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         Panelr3.ResumeLayout(False)
@@ -725,31 +651,18 @@ Partial Class frmMaterial
     Friend WithEvents Panelr2 As PanelR
     Friend WithEvents Panelr16 As PanelR
     Friend WithEvents Panelr17 As PanelR
-    Friend WithEvents cmbEstado As ComboBox
     Friend WithEvents PictureBox8 As PictureBox
     Friend WithEvents Label11 As Label
-    Friend WithEvents Panelr20 As PanelR
-    Friend WithEvents Panelr21 As PanelR
-    Friend WithEvents PictureBox10 As PictureBox
-    Friend WithEvents Label13 As Label
     Friend WithEvents Panelr10 As PanelR
     Friend WithEvents Panelr11 As PanelR
     Friend WithEvents dtpFechaRegistro As DateTimePicker
     Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents Label8 As Label
-    Friend WithEvents Panelr12 As PanelR
-    Friend WithEvents Panelr13 As PanelR
-    Friend WithEvents txtTelefono As TextBox
-    Friend WithEvents PictureBox6 As PictureBox
-    Friend WithEvents Label9 As Label
-    Friend WithEvents Panelr14 As PanelR
-    Friend WithEvents Panelr15 As PanelR
-    Friend WithEvents cmbTipo As ComboBox
-    Friend WithEvents PictureBox7 As PictureBox
-    Friend WithEvents Label10 As Label
     Friend WithEvents Panelr8 As PanelR
     Friend WithEvents Panelr9 As PanelR
     Friend WithEvents txtCantidad As TextBox
+    Friend WithEvents txtRFC As TextBox
+    Friend WithEvents txtDireccio As TextBox
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents Label7 As Label
     Friend WithEvents Panelr6 As PanelR
@@ -759,6 +672,8 @@ Partial Class frmMaterial
     Friend WithEvents Label6 As Label
     Friend WithEvents Panelr5 As PanelR
     Friend WithEvents Panelr4 As PanelR
+    Friend WithEvents cmbTipo As ComboBox
+    Friend WithEvents cmbRS As ComboBox
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Label5 As Label
     Friend WithEvents lbID As Label
@@ -772,7 +687,17 @@ Partial Class frmMaterial
     Friend WithEvents Panelr18 As PanelR
     Friend WithEvents btnAceptar As Button
     Friend WithEvents Label1 As Label
-    Friend WithEvents cmbUnidadMedida As ComboBox
+    Friend WithEvents Panelr19 As PanelR
+    Friend WithEvents Panelr20 As PanelR
+    Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents PictureBox9 As PictureBox
-    Friend WithEvents btnImagen As Button
+    Friend WithEvents Label12 As Label
+    Friend WithEvents Panelr21 As PanelR
+    Friend WithEvents Panelr22 As PanelR
+    Friend WithEvents txtTelefono As TextBox
+    Friend WithEvents PictureBox10 As PictureBox
+    Friend WithEvents Label13 As Label
+    Friend WithEvents txtNombre As TextBox
+    Friend WithEvents cmbEstado As ComboBox
+    Friend WithEvents txtCorreo As TextBox
 End Class
